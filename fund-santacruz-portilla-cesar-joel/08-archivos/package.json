@@ -1,0 +1,17 @@
+{
+    "name": "08-archivos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "(tsc 01-archivos.ts --target ES5|| echo) && node 01-archivos.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^13.1.8"
+    },
+    "dependencies": {
+        "prompts": "^2.3.0"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "deberuno",
+    "version": "2.0.0",
+    "description": "deberuno",
+    "main": "index.js",
+    "scripts": {
+        "test": "(tsc 00-main.ts --target ES5|| echo) && node 00-main.js"
+    },
+    "keywords": [
+        "DeberUno"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "fs-extra": "^8.1.0",
+        "prompts": "^2.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "^13.7.0"
+    }
+}

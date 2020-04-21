@@ -1,0 +1,14 @@
+{
+    "name": "package",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "(tsc Deber-02-01.ts || echo) && node Deber02-01.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "prompts": "^2.3.0"
+    }
+}

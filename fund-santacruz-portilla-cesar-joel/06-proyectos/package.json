@@ -1,0 +1,14 @@
+{
+    "name": "06-proyectos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "empezar": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "libreria-cssu": "^1.2.1"
+    }
+}
