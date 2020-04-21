@@ -1,0 +1,14 @@
+{
+    "name": "deberdos",
+    "version": "1.0.0",
+    "description": "deberdos",
+    "main": "puzzle.js",
+    "scripts": {
+        "test": "(tsc 01-main.ts --target ES5|| echo) && node 01-main.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "prompts": "^2.3.0"
+    }
+}

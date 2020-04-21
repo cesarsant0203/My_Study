@@ -1,0 +1,52 @@
+<!doctype>
+<html>
+  <head>
+    <meta name="theme-color" content="#1E1D24">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anas Araid">
+    <meta name="description" content="Simple silding-puzzle written in pure javascript">
+    <meta name="keywords" content="sliding-puzzle, game, javascript">
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="text/css" href="css/font-quicksand.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="js/sweetalert.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/easytimer.js"></script>
+    <script src="slidingPuzzle.js"></script>
+    <title>Sliding Puzzle</title>
+  </head>
+  <body id="body" class="style-game-bg">
+    <nav style="text-align:center;height:40px;margin-top:40px">
+      <h1 style="color:white;font-size:2.5em">SLIDING PUZZLE</h1>
+      <!--<h4 style="color:white">Developed with <i class="material-icons">free_breakfast</i> by <a href="https://asdf1899.github.io" style="color:white">Anas Araid</a></h4> -->
+      <br>
+      <div id="github">
+        <a class="github-button" href="https://github.com/asdf1899/sliding-puzzle" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star asdf1899/sliding-puzzle on GitHub">Star</a>
+        <p style="color:white;display:inline-block">or</p>
+        <a class="github-button" href="https://github.com/asdf1899/sliding-puzzle/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork asdf1899/sliding-puzzle on GitHub">Fork</a>
+      </div>
+      <br>
+      <button id="btn-new" class="style-game-button" onclick="init()">NUOVA PARTITA</button>
+      <button id="btn-back" class="style-game-button" onclick="location.reload()" style="display:none">INDIETRO</button>
+      <br>
+      <br>
+
+      <div style="text-align:center;">
+        <h3 style="color:white;display:inline-block">Mosse:</h3>
+        <h3 id="mosse" style="color:white;display:inline-block"></h3>
+        <div id="timer">
+          <h3 style="color:white;display:inline-block">Tempo:</h3>
+          <h3 class="values" style="color:white;display:inline-block"></h3>
+        </div>
+      </div>
+    </nav><br><br>
+    <div class="style-game-wrapper">
+      <div id="game" class="style-game-section">
+        <h3 style="color:white;display:inline-block">Per iniziare, premi su "Nuova partita"</h3>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "referencias",
+  "version": "1.0.0",
+  "description": "referencias",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc 01-main.ts --target ES5 || echo) && node 01-main.js"
+  },
+  "keywords": [
+    "referencias"
+  ],
+  "author": "Cesar Santacruz",
+  "license": "ISC"
+}

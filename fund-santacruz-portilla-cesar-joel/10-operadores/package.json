@@ -1,0 +1,13 @@
+{
+    "name": "main-package",
+    "version": "1.0.0",
+    "description": "Operadores",
+    "main": "index.js",
+    "scripts": {
+        "test": " (tsc 01-main.ts --target ES5 || echo) && node 01-main.js",
+        "test2": " (tsc 02-filter.ts --target ES5 || echo) && node 02-filter.js",
+        "test3": " (tsc 03-every.ts --target ES5 || echo) && node 03-every.js"
+    },
+    "author": "",
+    "license": "ISC"
+}
