@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Prueba
+    </title>
+</head>
+
+<body>
+    <form id="form-order">
+
+        <p>
+            <label for="name"> Nombre (obligatorio)</label>
+            <input type="text" name="name" id="name"
+            placeholder="Cesar Santacruz"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p>
+            <label for="passwd"> Contrasenia (obligatorio)</label>
+            <input type="passwd" name="passwd" id="passwd"
+            placeholder="qazwsx1234"
+            pattern="[a-z] {6} [0-9] {4}"
+            required>
+        </p>
+        <p>
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone"
+            placeholder="0999999999"
+            pattern="0{1} [0-9] {9}">
+        </p>
+        <p>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email"
+            placeholder="example@gmail.com">
+        </p>
+        <p>
+            <label for="website"> Tu website (obligatorio)</label>
+            <input type="url" name="website" id="website"
+            placeholder="www.example.com"
+            required>
+        </p>
+        <p>
+            <label for="numberexample"> N de temas </label>
+            <input type="number" name="numberexample" id="numberexample"
+            placeholder="2"
+            min="2" max="10" step="2">
+            Entre 2 y 10 solo pares
+        </p>
+        <p>
+            <label for="deliverydate"> Fecha de envio</label>
+            <input type="text" name="deliverydate" id="deliverydate" min="2000-08-27">
+        </p>
+        <input type="submit" value="enviar">
+
+    </form>
+</body>
+
+</html>
