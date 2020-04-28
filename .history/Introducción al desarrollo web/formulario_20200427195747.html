@@ -19,12 +19,12 @@
             autocomplete
             required>
         </p>
-        <p>
+        <!--<p>
             <label for="passwd"> Contrasenia (obligatorio)</label>
             <input type="password" name="passwd" id="passwd"
             placeholder="qazwsx1234"
-            pattern="[A-Za-z]{6}[0-9]{4}" required/>
-        </p>
+            pattern=" [a-z] {4} [0-9] {2}" required/>
+        </p>-->
         <p>
             <label for="phone">Telefono</label>
             <input type="tel" name="phone" id="phone"
@@ -36,9 +36,10 @@
             placeholder="example@gmail.com">
         </p>
         <p>
-            <label for="website"> Tu website</label>
+            <label for="website"> Tu website (obligatorio)</label>
             <input type="url" name="website" id="website"
-            placeholder="www.example.com">
+            placeholder="www.example.com"
+            required>
         </p>
         <p>
             <label for="numberexample"> N de temas </label>
@@ -85,10 +86,10 @@
                         urgente</label></p>
                     <p><label>
                         <input type="checkbox" name="deliverytype" value="acuse" >
-                        acuse</label></p>
+                    Media</label></p>
                     <p><label>
                         <input type="checkbox" name="deliverytype" value="reembolso" >
-                        reembolso</label></p>
+                    Alta</label></p>
             </fieldset>
             </p>
         <input type="submit" value="enviar">
