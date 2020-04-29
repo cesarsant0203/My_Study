@@ -1,0 +1,41 @@
+.margen-10, .margen-20, .margen-30 {
+    border: 1px solid black;
+}
+.margen-10 {
+    margin: 10px;
+}
+.margen-20 {
+    margin: 20px;
+}
+.margen-30 {
+    margin: 30px;
+}
+
+#contentBox {
+    width: 200px;
+    border: 5px solid #000080;
+    box-sizing: content-box;
+    padding: 15px;
+}
+#borderBox {
+    width: 200px;
+    border: 5px solid #000080;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.box-sizing-content, .box-sizing-border {
+    width: 38em;
+    border: 1em solid black;
+}
+.box-sizing-content .split {
+    width: 50%;
+    border: 1em silver ridge;
+    box-sizing: content-box;
+    padding: left;
+}
+.box-sizing-border .split {
+    width: 50%;
+    border: 1em silver ridge;
+    box-sizing: border-box;
+    padding: left;
+}

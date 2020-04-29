@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Modelo de caja</title>
+    <link href="2.11-modelo_de_caja_css.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section>
+    <p class="margen-10">
+        Este parrafo tiene margen 10px.
+    </p>
+    <p class="margen-20">
+        Este parrafo tiene margen 20px.
+    </p>
+    <p class="margen-30">
+        Este parrafo tiene margen 30px.
+    </p>
+    </section>
+    <div id="contentBox">box-sizing: content-box</div>
+    <div id="borderBox">box-sizing: border-box</div>
+    <section class="box-sizing-content">
+        <div class="split">Este div ocupa la mitad izquierda</div>
+        <div class="split">Este div ocupa la mitad derecha</div>
+        <div class="">Este div aparece después</div>
+    </section>
+    <div>Un div de separacion</div>
+    <section class="box-sizing-border">
+        <div class="split">Este div ocupa la mitad izquierda</div>
+        <div class="split">Este div ocupa la mitad derecha</div>
+        <div class="split">Este div aparece después</div>
+    </section>
+</body>
+
+</html>
