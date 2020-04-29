@@ -1,0 +1,27 @@
+*{
+    background-color: blanchedalmond;
+}
+h1#titulo, h4, section#mySection {
+    text-align: center;
+}
+table#tec {
+    border: red 5px solid;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    align-self: ;
+}
+td{
+    border: black 1px solid;
+}
+form :focus {
+    border: 5px solid rgb(0,0,0);
+}
+p:first-of-type{
+    font-weight: bold;
+}
+input#name, input#sname{
+    background-color: white;
+        margin: 0.2cm;
+        padding: 0%;
+}

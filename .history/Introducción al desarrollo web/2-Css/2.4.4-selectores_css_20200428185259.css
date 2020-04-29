@@ -1,0 +1,28 @@
+/*a[title]{
+    font-weight: bold;
+}
+*/
+h1#titulo, h4, section#mySection {
+    text-align: center;
+}
+h1 {
+    color: brown;
+}
+*{
+    background-color: blanchedalmond;
+}
+a[title=Visitado]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+a[id |=top] {
+    background-color: brown;
+    color: aqua;
+}
+a[title~=Indice]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+:lang(en){
+    font-style: italic;
+}

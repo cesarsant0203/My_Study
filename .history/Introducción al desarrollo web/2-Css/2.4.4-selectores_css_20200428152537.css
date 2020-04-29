@@ -1,0 +1,16 @@
+/*a[title]{
+    font-weight: bold;
+}
+*/
+a[title=Visitado]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xlarger;
+}
+a[id |=top] {
+    background-color: brown;
+    color: aqua;
+}
+a[title~=Indice]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}

@@ -1,0 +1,10 @@
+a[title]{
+    font-weight: bold;
+}
+a[title=Indice]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+a[id |=top] {
+    ba
+}

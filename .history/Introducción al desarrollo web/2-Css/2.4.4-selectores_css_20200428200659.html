@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Selectores CSS </title>
+    <link href="2.4.4-selectores_css.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1 id="titulo">|a[title] y lang|</h1>
+    <h4>2.4.4-selectores_css.html</h4>
+    <section id="mySection" class="box">
+        <nav>
+            <a href="2.4-selectores_css.html">|Main|</a>
+            <a href="2.4.2-selectores_css.html">|Form:focus|</a>
+            <a href="2.4.3-selectores_css.html">|Lista y selectores : * + ~|</a>
+            <a href="2.4.4-selectores_css.html">|a[title] y lang|</a>
+        </nav>
+    </section>
+    <section id="SectionTwo" class="box">
+        <nav>
+            <p>
+                <a href="2.4-selectores_css.html" title="Main">|Main|</a>
+            </p>
+            <p>
+                <a href="2.4.2-selectores_css.html" title="form">|Form:focus|</a>
+            </p>
+            <p>
+                <a href="2.4.3-selectores_css.html" title="Pagina 1">|Lista y selectores : * + ~| 
+                    <span lang="en"> or page one</span></a>
+            </p>
+            <p>
+                <a href="2.4.4-selectores_css.html" id="top-one">|a[title] y lang|</a>
+            </p>
+        </nav>
+    </section>
+    <article>
+        <p id="p1">
+            En esta pagina vemos los diferentes formatos que le podemos
+             dar a los hipervínculos
+        </p>
+        <p>a[title~=Main] Lo que hace es modificar todos los titulos que contengan
+            la palabra Main
+        </p>
+        <p>a[title=form] Lo que hace es modificar el titulo de la palabra form</p>
+        <p>[id |=top] Lo que hace es modificar un titulo que usa caracteres
+            especiales </p>
+        <p>:lang(en){</p>
+    </article>
+    <footer>
+        &copy Cesar Santacruz
+    </footer>
+</body>
+
+</html>

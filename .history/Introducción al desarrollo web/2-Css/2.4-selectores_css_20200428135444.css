@@ -1,0 +1,42 @@
+/*tipo*/
+h1{
+    color: brown;
+}
+/*-----------------------*/
+
+/*.clase*/
+.box{
+    background-color: blue;
+    color: aqua;
+}
+.bold{
+    font-size: large;
+}
+.red{
+    color: red;
+}
+/*-----------------------*/
+
+/*#identificador*/
+#myDiv{
+    color: bisque;
+}
+span#mySpan{
+    color: darkorange;
+}
+/*-----------------------*/
+div span{
+    font-size: x-large;
+}
+/* selector universal (*)*/
+*{
+    margin: 1cm;
+    padding: 0%;
+}
+/*-----------------------*/
+/*#identificador*/
+
+/*-----------------------*/
+/*#identificador*/
+
+/*-----------------------*/

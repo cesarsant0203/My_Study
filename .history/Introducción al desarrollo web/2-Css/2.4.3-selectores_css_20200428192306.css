@@ -1,0 +1,30 @@
+*{
+    background-color: blanchedalmond;
+}
+h1#titulo, h4, section#mySection {
+    text-align: center;
+}
+h1 {
+    color: brown;
+}
+img.new + span {
+    font-weight: bold;
+}
+img.new {
+    margin: 0.2cm;
+    border: rgb(41, 253, 4) 5px solid;
+    border-collapse: collapse;
+}
+ul#primera>li:first-child {
+    font-size: 2em;
+}
+
+strong#strongLinea, ul#segunda>li:nth-child(2){
+    background-color: aqua;
+}
+.letra::first-letter {
+    font-size: 2em;
+}
+.linea::first-line {
+    font-size: 2em;
+}
