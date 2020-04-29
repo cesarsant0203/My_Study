@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+}
+.no-style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.vertical a {
+    display: block;
+    width: ;
+}

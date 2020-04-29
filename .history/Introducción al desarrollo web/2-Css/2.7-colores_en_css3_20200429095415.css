@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+header {
+    background: #696;
+    padding: 1em;
+}
+h1 {
+    display: inline;
+}
+a{
+    font-size: 24px;
+    font-weight: bold;
+    color
+}

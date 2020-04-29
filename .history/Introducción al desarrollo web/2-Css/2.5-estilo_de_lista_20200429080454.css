@@ -1,0 +1,17 @@
+.in {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.out {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.image {
+    list-style-image: url(https://i0.pngocean.com/files/1014/303/773/windows-thumbnail-cache-geometry-gfycat-triangulo.jpg)
+}
+
+:lang(en) {
+    font-style: italic;
+}
