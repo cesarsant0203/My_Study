@@ -1,0 +1,96 @@
+/*tipo*/
+*{
+    background-color: blanchedalmond;
+}
+h1 {
+    color: brown;
+}
+
+/*-----------------------*/
+
+/*.clase*/
+.box {
+    background-color: none;
+    color: aqua;
+}
+
+.bold {
+    font-size: large;
+}
+
+.red {
+    color: red;
+}
+
+/*-----------------------*/
+
+/*#identificador*/
+#holaMundo {
+    color: rgb(49, 3, 255);
+    text-a
+}
+
+span#mySpan {
+    color: darkorange;
+}
+
+/*-----------------------*/
+div span {
+    font-size: xx-large;
+}
+
+/*-----------------------*/
+
+/* selector universal (*)*/
+* {
+    margin: 0, 2cm;
+    padding: 0%;
+}
+
+/*-----------------------*/
+
+/*dos puntos:*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: deeppink;
+}
+
+a:active {
+    text-decoration: none;
+    color: deeppink;
+}
+/*-----------------------*/
+h1, h4, section {
+    text-align: center;
+}
+section#mySection{
+    font-size: large;
+}
+span#mundo {
+    font-style: italic;
+}
+footer {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    height: 30px;
+}
+p#p1 {
+    text-align: justify;
+}
+img.gif {
+    width: 320px;
+    height: 240px;
+    border: rgb(255, 209, 3) 5px solid;
+    border-collapse: collapse;
+    display: block;
+    margin: auto;
+}

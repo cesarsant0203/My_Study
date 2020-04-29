@@ -1,0 +1,63 @@
+/*a[title]{
+    font-weight: bold;
+}
+*/
+* {
+    background-color: blanchedalmond;
+}
+
+h1#titulo,
+h4,
+section#mySection {
+    text-align: center;
+}
+
+h1 {
+    color: brown;
+}
+
+a[title~=Main] {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+
+a[title=form] {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin-left: 9%;
+}
+
+a[title=lista] {
+    font-family: fantasy;
+    font-size: larger;
+    margin-left: 23%;
+}
+
+a[id |=top] {
+    background-color: brown;
+    color: aqua;
+    font-size: large;
+    margin-left: 57%;
+}
+
+:lang(en) {
+    font-style: italic;
+}
+
+p#p1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+
+}
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    height: 30px;
+}
+
+ol>li {
+    margin: 3px;
+    font-size: medium;
+}

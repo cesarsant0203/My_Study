@@ -1,0 +1,19 @@
+
+img.new + span {
+    font-weight: bold;
+}
+li#primera:first-child {
+    font-size: 2em;
+}
+li#primera:last-child {
+    font-size: 2em;
+}
+ul>li:nth-child(2){
+    background-color: aqua;
+}
+.letra::first-letter {
+    font-size: 2em;
+}
+.linea::first-line {
+    font-size: 2em;
+}

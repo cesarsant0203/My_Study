@@ -1,0 +1,17 @@
+*{
+    background-color: blanchedalmond;
+}
+h1, h4, section {
+    text-align: center;
+}
+form :focus {
+    border: 5px solid rgb(0,0,0);
+}
+p:first-of-type{
+    font-weight: bold;
+}
+input#name, input#sname{
+    background-color: white;
+        margin: 0.2cm;
+        padding: 0%;
+}
