@@ -1,0 +1,11 @@
+body {
+    color: green;
+    font-weight: bold;
+}
+main {
+    border: 2px solid black;
+}
+a {
+    color: inherit;
+}
+p {}

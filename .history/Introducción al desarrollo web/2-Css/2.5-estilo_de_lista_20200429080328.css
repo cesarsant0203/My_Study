@@ -1,0 +1,17 @@
+.in {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.out {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.image {
+    list-style-image: url(https://i1.wp.com/dibujoypintura.net/wp-content/uploads/2017/12/Imagenes-de-arboles-de-navidad-para-pintar.png?resize=570%2C612&ssl=1);
+}
+
+:lang(en) {
+    font-style: italic;
+}

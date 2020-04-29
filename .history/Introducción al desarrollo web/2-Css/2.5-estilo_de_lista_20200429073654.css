@@ -1,0 +1,8 @@
+.in {
+    list-style-type: square;
+    list-style-position: ;
+}
+.out {
+    list-style-type: disc;
+    list-style-position: outside;
+}

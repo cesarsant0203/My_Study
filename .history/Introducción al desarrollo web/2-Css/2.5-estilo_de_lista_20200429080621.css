@@ -1,0 +1,17 @@
+.in {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.out {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.image {
+    list-style-image: url(https://helpx.adobe.com/content/dam/help/icons/AX_NavOptions_Sm_N.png);
+}
+
+:lang(en) {
+    font-style: italic;
+}

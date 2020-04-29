@@ -1,0 +1,34 @@
+a {
+    text-decoration: none;
+}
+.no-style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.vertical a {
+    display: block;
+    width: 120px;
+    background-color: orange;
+    text-align: center;
+    padding: 4px;
+    color: azure;
+}
+.vertical a:hover, .vertical a:active {
+    background-color: darkgoldenrod;
+}
+.horizotal li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.horizotal a {
+    margin: 0;
+    color: white;
+    background-color: chartreuse ;
+    text-align: center;
+    padding: 0;
+}
+.horizotal a:hover, .horizotal a:active {
+    background-color: aqua;
+}

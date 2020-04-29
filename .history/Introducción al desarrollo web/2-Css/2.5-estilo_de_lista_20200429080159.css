@@ -1,0 +1,14 @@
+.in {
+    list-style-type: square;
+    list-style-position: inside;
+}
+.out {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+.image {
+    list
+}
+:lang(en){
+    font-style: italic;
+}

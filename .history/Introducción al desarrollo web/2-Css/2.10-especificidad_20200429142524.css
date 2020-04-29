@@ -1,0 +1,15 @@
+#id1, #id2, #id3 {
+    color: red;
+}
+ul li.important {
+    color: green;
+}
+ul li {
+    color: blue;
+}
+li.important {
+    color: yellow;
+}
+li {
+    
+}
