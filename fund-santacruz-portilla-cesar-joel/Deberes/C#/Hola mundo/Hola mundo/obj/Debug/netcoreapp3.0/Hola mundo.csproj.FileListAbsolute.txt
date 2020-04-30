@@ -9,3 +9,14 @@ C:\Users\cesar\Documents\GitHub\fund-santacruz-portilla-cesar-joel\Deberes\C#\Ho
 C:\Users\cesar\Documents\GitHub\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.AssemblyInfo.cs
 C:\Users\cesar\Documents\GitHub\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.dll
 C:\Users\cesar\Documents\GitHub\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.pdb
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\bin\Debug\netcoreapp3.0\Hola mundo.exe
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\bin\Debug\netcoreapp3.0\Hola mundo.deps.json
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\bin\Debug\netcoreapp3.0\Hola mundo.runtimeconfig.json
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\bin\Debug\netcoreapp3.0\Hola mundo.runtimeconfig.dev.json
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\bin\Debug\netcoreapp3.0\Hola mundo.dll
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\bin\Debug\netcoreapp3.0\Hola mundo.pdb
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.csprojAssemblyReference.cache
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.AssemblyInfoInputs.cache
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.AssemblyInfo.cs
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.dll
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.pdb
