@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cesar\\Documents\\GitHub\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
+      "projectUniqueName": "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
       "projectName": "Hola mundo",
-      "projectPath": "C:\\Users\\cesar\\Documents\\GitHub\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
+      "projectPath": "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
       "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cesar\\Documents\\GitHub\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\obj\\",
+      "outputPath": "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config",

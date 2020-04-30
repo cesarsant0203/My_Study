@@ -1,0 +1,14 @@
+@media (min-width: 1200px) {
+    h1, #pie {
+        text-align: center;
+    }
+
+    #menu, #contenido, #info {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    
+    #menu#menu
+}
