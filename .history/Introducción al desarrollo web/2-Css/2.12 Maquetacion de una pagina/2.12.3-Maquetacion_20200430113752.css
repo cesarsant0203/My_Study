@@ -1,0 +1,17 @@
+h1, #pie {
+    text-align: center;
+}
+#menu, #contenido, #info {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+#menu {
+    width: 20%;
+}
+#contenido, #info {
+    width: 40%;
+}
+#pie {
+    clear: both;
+}

@@ -1,0 +1,30 @@
+body {
+    width: 75em;
+    padding: 0;
+    margin: 0;
+}
+
+#cabecera, #pie {
+    text-align: center;
+}
+#menu, #contenido, #info {
+    padding: 0;
+    margin: 0;
+}
+#menu {
+    position: absolute;
+    width: 10em;
+}
+#contenido {
+    position: relative;
+    left: 10em;
+    width: 40em;
+}
+#info {
+    position: absolute;
+    left: 50em;
+    width: 25em;
+}
+#info h2 {
+    margin-top: 0;
+}
