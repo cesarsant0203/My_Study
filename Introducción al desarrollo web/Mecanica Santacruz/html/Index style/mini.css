@@ -1,0 +1,328 @@
+.display-mini {
+    display: inherit !important;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 220%;
+}
+h2 {
+    text-align: center;
+}
+p.index {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 1.4em;
+}
+header {
+    background: black;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0em;
+}
+header, #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#main-nav {
+    width: 99.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.header, h4#vs {
+    box-sizing: border-box;
+    margin-bottom: 0%;
+}
+a.header {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 120%;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.4% 0.6%;
+    border-radius: 4%;
+    background-color: rgba(255, 255, 255, 0.602);
+    transition: background-color 1s linear;
+    transition: color 1s linear
+}
+a.header:hover, a.header:focus {
+    background-color: #fff;
+    color: black;
+}
+a.header:focus {
+    box-shadow: 0 0 0 3% rgba(0,0,0,0.25);
+    outline: 0;
+}
+
+p.versionweb {
+    color: gainsboro;
+    font-size: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5%;
+}
+
+
+
+
+
+
+
+
+#slideshow-pics {
+
+    margin-right: 5%;
+    margin-left: 5%;
+    clear: both;
+    width: 90%;
+    max-width: 90%;
+    box-sizing: border-box;
+    padding-top: 2%;
+}
+/* Slideshow container */
+.slideshow-container {
+
+    width: 98%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 1.6em;
+    padding: 2% 3%;
+    top: 0;
+    box-sizing: border-box;
+    position: absolute;
+  }
+/* The dots/bullets/indicators */
+.dot {
+    clear: both;
+  height: 40px;
+  width: 40px;
+  margin: 0 3%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  box-sizing: border-box;
+}
+img {
+    box-sizing: border-box;
+    width: 100%;
+}
+.active {
+  background-color: #717171;
+  box-sizing: border-box;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  box-sizing: border-box;
+}
+#main-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    width: 90%;
+    box-sizing: border-box;
+    border-top: #717171 10px solid;
+    border-bottom: #717171 10px solid ;
+    border-radius: 6%;
+}
+p.first-text{
+  text-align: justify;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.first-h2{
+  font-size: 3em;
+  box-sizing: border-box;
+}
+#cncLogo {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 50px 50px 50px 50px;
+}
+#torno1 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+#servicios-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    width: 90%;
+    box-sizing: border-box;
+    border-top: #717171 10px solid;
+    border-bottom: #717171 10px solid ;
+    border-radius: 6%;
+}
+#perfilpic {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+}
+#linkimage {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.img-about{
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-sizing: border-box;
+}
+.facebook-Logo {
+    width: 15%;
+    height: 15%;
+    box-sizing: border-box;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+footer {
+    margin-bottom: 0%;
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 10%;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.dropbtn {
+    box-sizing: border-box;
+    margin-top: auto;
+    font-size: 400%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.76);
+    text-decoration: none;
+    padding: 0.5% 4%;
+
+    background-color: rgba(78, 78, 78, 0.904);
+    transition: color 1s linear;
+    transition: background-color 1s linear;
+    width: 80%;
+    float: left;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 9, 9);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgb(70, 9, 9);
+    font-size: 400%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    transition: backgroud-color 3s linear;
+    float: left;
+    border-radius: 0px 0px 50px 50px;
+  }
+  
+  .dropdown-content a {
+    color:  rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover, .dropdown a:focus{background-color: rgb(0, 0, 0);}
+  
+  .show {display: block;}
+
+
+
+
+
+  .dropbtnx {
+    box-sizing: border-box;
+    margin-top: auto;
+    font-size: 400%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.76);
+    text-decoration: none;
+    padding: 0.5% 4%;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgba(78, 78, 78, 0.904);
+    transition: color 1s linear;
+    transition: background-color 1s linear;
+    width: 20%;
+    float: left;
+  }
+  
+  .dropbtnx:hover, .dropbtnx:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 9, 9);
+  }
+  
+  .dropdownx {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-contentx {
+    display: none;
+    position: absolute;
+    background-color:  rgb(70, 9, 9);
+    overflow: auto;
+    font-size: 400%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    transition: backgroud-color 3s linear;
+    float: left;
+    border-radius: 0px 0px 50px 50px;
+  }
+  
+  .dropdown-contentx a {
+    color:  rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownx a:hover, .dropdownx a:focus{background-color: rgb(0, 0, 0);}
+  
+  .showx {display: block;}

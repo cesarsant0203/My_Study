@@ -7,11 +7,12 @@ header {
     box-sizing: border-box;
     margin: 0em;
 }
-a.header, h4#vs {
+a#header, h4 {
+    background-color: inherit;
     box-sizing: border-box;
     margin-bottom: 1px;
 }
-a.header {
+a#header {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
     color: white;
@@ -24,11 +25,11 @@ a.header {
     transition: background-color 1s linear;
     transition: color 1s linear
 }
-a.header:hover, a.header:focus {
+a#header:hover, a#header:focus {
     background-color: #fff;
     color: black;
 }
-a.header:focus {
+a#header:focus {
     box-shadow: 0 0 0 3px rgba(0,0,0,0.25);
     outline: 0;
 }
@@ -39,13 +40,13 @@ h4#vs {
     line-height: 1.4;
     margin-top: 4px;
 }
-section.navBar{
+section#navBar{
     font-size: large;
     text-align: center;
     background-color: rgb(34, 32, 32);
     padding: 0.33em;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 a.index{
     box-sizing: border-box;
@@ -62,9 +63,9 @@ a.index{
 a.index:hover, a.index:focus {
     color: #fff;
 }
-a.index:focus, {
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.25);
-    outline: 0;
+a.index:focus {
+    box-shadow: 0 0 0, 3px, rgba(0,0,0,0.25);
+    outline: 0px;
 }
 a.index:link {
     text-decoration: none;
@@ -73,9 +74,10 @@ a.index:visited {
     text-decoration: none;
 }
 p#callMe {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
     box-sizing: border-box;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    border: 6px solid black;
     padding: 2px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -83,11 +85,12 @@ p#callMe {
     font-size: xx-small;
     color: rgb(134, 134, 134);
     line-height: 1.4;
+    background-color: black;
 }
 .blackCard {
     color: white;
     background-color: black;
-    text-align: center;
+    text-align: center;    
     box-sizing: border-box;
     margin-bottom: 1cm solid black;
     border-radius: 7px;
@@ -114,15 +117,7 @@ h2 {
     padding-top: 40px;
 }
 p#intro {
-    color: rgba(255, 255, 255, 0.856);
-}
-p#card1 {
     color: rgba(0, 0, 0, 0.856);
-    padding-bottom: 7px;
-}
-p#card2 {
-    color: rgba(255, 255, 255, 0.856);
-    padding-bottom: 7px;
 }
 a.postLink {
     color: blue;
@@ -136,23 +131,56 @@ a.postLink:link {
 a.postLink:visited {
     text-decoration: none;
 }
+
+
+
+
 img.gif {
     box-sizing: content-box;
     width: 480px;
     height: 320px;
     border-collapse: collapse;
-    display: inline;
     display: block;
     margin: auto;
     padding-bottom: 40px;
     padding-top: 5px;
 }
+
 img.post#mPost1 {
     box-sizing: content-box;
     width: 600px;
     height: 315px;
     border-collapse: collapse;
-    display: inline;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+img.post#mPost2 {
+    box-sizing: content-box;
+    width: 600px;
+    height: 337.5px;
+    border-collapse: collapse;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+img.post#mPost3 {
+    box-sizing: content-box;
+    width: 600px;
+    height: 337.5px;
+    border-collapse: collapse;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+img.post#mPost4 {
+    box-sizing: content-box;
+    width: 600px;
+    height: 337.5px;
+    border-collapse: collapse;
     display: block;
     margin: auto;
     padding-bottom: 40px;

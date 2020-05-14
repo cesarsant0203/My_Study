@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mecanica Santacruz | Noticias | News</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 ,user-scalable=no, minimun-scale=1.0">
+    <meta name="viewpoint" content="width=width, , initial-scale=1.0, maximum-scale=1.0 ,user-scalable=no, minimun-scale=1.0">
+    <link href="Index style/index.css" rel="stylesheet" />
+    <link href="Index style/base.css" rel="stylesheet" type="" />
+    <link href="Index style/great.css" rel="stylesheet" type="" media="screen and (min-width: 981px)and (max-width: 8000px)" />
+    <link href="Index style/medium.css" rel="stylesheet" type=""media="screen and (min-device-width: 481px) and (max-width: 980px)" />
+    <link href="Index style/mini.css" rel="stylesheet" type="" media="only screen and (min-width: 50px) and (max-device-width: 480px)" />
+    <link href="Index style/colors.css" rel="stylesheet" type="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="manifest" href="Images/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a class="header" href="https://mecanicasantacruz.ml/"><img class="img logo_pinion display-great display-medium" src="Images/logo_pinion.jpg">
+              <img class="img logo_pinion display-mini" src=""> Mecanica Santacruz</a>
+        </h1>
+        <p class="versionweb">vs1.0.0</p>
+    </header>
+
+    <div class="wrapper">
+
+          <div class="dropdownx display-mini">
+            <button onclick="myFunctionx()" class="dropbtnx"><i class="fa fa-bars"></i></button>
+            <div id="myDropdownx" class="dropdown-contentx">
+                <a href=""><i class="fa fa-close">Close</i></a>
+                <a href="tel:+593991837155">+593991837155</a>
+                <a href="https://goo.gl/maps/oeCSmF8tENdhMrGd7" target="_blank">Pasaje N69A y Rio Cachabi,<br />
+                Quito, Ecuador</a>
+                <a class="mail"
+                href="mailto:cesar.santacruzortega@gmail.com?subject = Feedback&body = Message">cesar.
+                santacruzortega@
+                gmail.com</a>
+            </div>
+          </div>
+          <nav id="main-nav" class="navBar">
+            <ul class="menu display-great display-medium">
+                <li><a class="index link" href="https://mecanicasantacruz.ml/">Inicio</a></li>
+                <li><a class="index link" href="Acerca_de">Acerca de</a></li>
+                <li><a class="index link" href="Servicios">Servicios</a></li>
+                <li><a class="index link" href="Clientes">Clientes</a></li>
+                <li><a class="index link" href="Contacto">Contacto</a></li>
+                <li><a class="index link" href="Noticias">Noticias</a></li>
+            </ul>
+            <div class="dropdown display-mini">
+                <button onclick="myFunction()" class="dropbtn">Inicio</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class="index link" href="https://mecanicasantacruz.ml/">Inicio</a></li>
+                    <a class="index link" href="Acerca_de">Acerca de</a>
+                    <a class="index link" href="Servicios">Servicios</a>
+                    <a class="index link" href="Clientes">Clientes</a>
+                    <a class="index link" href="Contacto">Contacto</a>
+                    <a class="index link" href="Noticias">Noticias</a>
+                </div>
+
+        </nav>
+
+        <section class="display-great display-medium cinfo">
+            <p>CESAR SANTACRUZ<br />
+                Llamame a:<a class="link cinfo tel" href="tel:+593991837155">+593-9918-37-155</a></p>
+        </section>
+        <section>
+          <ul id="datos" class="datos display-great display-medium">
+              <li><strong>Direccion</strong><br />
+                  <a class=" link datos" href="https://goo.gl/maps/oeCSmF8tENdhMrGd7" target="_blank">Pasaje N69A y
+                      Rio Cachabi,<br />
+                      Quito, Ecuador</a></li>
+              <li><strong>Contacto</strong><br />
+                  <a class="mail link datos"
+                      href="mailto:cesar.santacruzortega@gmail.com?subject = Feedback&body = Message">cesar.
+                      santacruzortega@
+                      gmail.com</a>
+              </li>
+              <li class="logo"> &copy 2020 by<br /><strong>Mecanica Santacruz</strong></li>
+          </ul>
+      </section>
+    </div>
+
+
+
+
+
+    
+
+
+    <footer>
+        &copy Mecanica Santacruz | Todos los derechos reservados 2019-2020
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+
+        }
+        function myFunctionx() {
+        document.getElementById("myDropdownx").classList.toggle("showx");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn'|| '.dropbtnx', '.dropbtnx')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var dropdownsx = document.getElementsByClassName("dropdown-contentx");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show'|| 'showx' )) {
+                openDropdown.classList.remove('show' || 'showx');
+              }
+            }
+            for (i = 0; i < dropdownsx.length; i++) {
+              var openDropdownx = dropdownsx[i];
+              if (openDropdownx.classList.contains('show'|| 'showx' )) {
+                openDropdownx.classList.remove('show' || 'showx');
+              }
+            }
+          }
+    }
+
+        </script>
+
+
+
+
+</body>
+
+</html>
