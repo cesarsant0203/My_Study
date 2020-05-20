@@ -3,10 +3,10 @@
 # 1. Asks the user to enter an access token or use the hard coded access token
 # 2. Lists the users in Webex Teams rooms
 # 3. Asks the user which Webex Teams room to monitor for "/location" requests (e.g. /San Jose)
-# 4. Periodically monitors the selected Webex Teams room for "/location" messages
+# 4. Periodically monitors the selected Webex Team room for "/location" messages
 # 5. Discovers GPS coordinates for the "location" using MapQuest API
 # 6. Discovers the date and time of the next ISS flyover over the "location" using the ISS location API
-# 7. Sends the results back to the Webex Teams room
+# 7. Sends the results back to the Webex Team room
 #
 # The student will:
 # 1. Enter the Webex Teams room API endpoint (URL)
@@ -32,14 +32,16 @@ import time
 
 # Student Step #2
 #    Following this comment and using the accessToken variable below, modify the code to
-#    ask the user to use either hard-coded or user-entered access token.
-choice = input("Do you wish to use the hard-coded token? (y/n)")
+#    ask the user to use either hard-coded or user entered access token.
+
+choice = input("Do you wish to use the hard coded token? (y/n)")
 
 if choice == "N" or choice == "n":
-	accessToken = input("What is your access token? ")
+	accessToken = input("Enter your access token: ")
 	accessToken = "Bearer " + accessToken
-else:
-	accessToken = "Bearer <!!!REPLACEME with hardcoded access token value!!!>"
+else: 
+	accessToken = "Bearer MThkZjQyNzQtZDVmNS00MGVjLTg4NDYtZDE5YmJiZThmNzM3ZjljNjA1YjktZjM3_PF84_consumer"
+
 
 #######################################################################################
 #     Using the requests library, create a new HTTP GET Request against the Webex Teams API Endpoint for Webex Teams Rooms:
@@ -75,7 +77,8 @@ for room in rooms:
 
 while True:
     # Input the name of the room to be searched 
-    roomNameToSearch = input("Which room should be monitored for /location (e.g. /San Jose) messages? ")
+    
+    roomNameToSearch = input("Which room should be monitored for /location (e.g. /Quito) messages? ")
 
     # Defines a variable that will hold the roomId 
     roomIdToGetMessages = None
@@ -93,7 +96,6 @@ while True:
             roomTitleToGetMessages = room["title"]
             print("Found room : " + roomTitleToGetMessages)
             break
-
     if(roomIdToGetMessages == None):
         print("Sorry, I didn't find any room with " + roomNameToSearch + " in it.")
         print("Please try again...")
@@ -137,7 +139,7 @@ while True:
     # check if the text of the message starts with the magic character "/" followed by a location name
     #  e.g.  "/San Jose"
     if message.find("/") == 0:
-        # name of a location (city) where we check for GPS coordinates using the MapQuest API
+        # name of a location (city) where we check for GPS coordinates using the MapQuest APIs
         #  message[1:]  returns all letters of the message variable except the first "/" character
         #   "/San Jose" is turned to "San Jose" and stored in the location variable
         location = message[1:]
@@ -145,19 +147,19 @@ while True:
         #  Student Step #4
         #     Add the MapQuest API key (from Chapter 1)
         # the MapQuest API GET parameters
-        #  "location" is the the location to lookup
+        #  "address" is the the location to lookup
         #  "key" is the secret API KEY you generated at https://developer.mapquest.com/user/me/apps
         mapsAPIGetParameters = { 
                                 "location": location, 
-                                "key": "<!!!REPLACEME with your MapQuest API Key!!!>" # please enter your MapQuest API key here
+                                "key": "nD9M3GG6huEtf3AGpZEM0aCXAYNixht6"
                                }
         # Get location information using the MapQuest API geocode service using the HTTP GET method
-        r = requests.get("https://www.mapquestapi.com/geocoding/v1/address?", 
+        r = requests.get("https://www.mapquestapi.com/geocoding/v1/address", 
                              params = mapsAPIGetParameters
                         )
         # Verify if the returned JSON data from the MapQuest API service are OK
         json_data = r.json()
-        # check if the status key in the returned JSON data is "0"
+        # check if the status key in the returned JSON data is "OK"
         if not json_data["info"]["statuscode"] == 0:
             raise Exception("Incorrect reply from MapQuest API. Status code: {}".format(r.statuscode))
 
@@ -167,7 +169,7 @@ while True:
         print("Location: " + locationResults)
 
         #  Student Step #5
-        #     Set the latitude and longitude key as retuned by the MapQuest API
+        #     Set the longitude key as retuned by the MapQuest API
         # store the GPS latitude and longitude of the location as received from the MapQuest API in variables
         locationLat = json_data["results"][0]["locations"][0]["latLng"]["lat"]
         locationLng = json_data["results"][0]["locations"][0]["latLng"]["lng"]
@@ -229,6 +231,11 @@ while True:
                          )
         if not r.status_code == 200:
             raise Exception("Incorrect reply from Webex Teams API. Status code: {}. Text: {}".format(r.status_code, r.text))
-
-
-    
+        break
+    else:
+        print("==================================================================================")
+        print("The room: " + str(roomNameToSearch) + " was monitored for /location (e.g. /Quito) messages")
+        print("The room: " + str(roomNameToSearch) + " does not have a /location (e.g. /Quito) message")
+        print("Add a /location (e.g. /Quito) message in the room: " + str(roomNameToSearch) + ", then run the program again." )
+        print("==================================================================================")
+        break
