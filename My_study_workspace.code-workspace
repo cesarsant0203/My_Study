@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\cesarsant0203.github.io"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}

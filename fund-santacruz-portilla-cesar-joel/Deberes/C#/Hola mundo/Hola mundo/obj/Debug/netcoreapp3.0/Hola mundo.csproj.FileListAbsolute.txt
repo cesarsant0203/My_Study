@@ -20,3 +20,5 @@ D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\
 D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.AssemblyInfo.cs
 D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.dll
 D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.pdb
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.csproj.CoreCompileInputs.cache
+D:\cesar\OneDrive\Documentos\GitHub\My_Study\fund-santacruz-portilla-cesar-joel\Deberes\C#\Hola mundo\Hola mundo\obj\Debug\netcoreapp3.0\Hola mundo.genruntimeconfig.cache

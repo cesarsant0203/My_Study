@@ -40,7 +40,7 @@ if choice == "N" or choice == "n":
 	accessToken = input("Enter your access token: ")
 	accessToken = "Bearer " + accessToken
 else: 
-	accessToken = "Bearer Mzg0YzViYWYtODc2OC00MjA2LWJlODgtMzM5NmM1OWVmZjIwYTAyMGYzMGUtYTVl_PF84_consumer"
+	accessToken = "Bearer MjM1NTY4ZjUtNjJiMS00NmEwLWIzNDQtODBhOTU4ODQyOTZjYmIxZTVmNTUtYmY5_PF84_consumer"
 
 #######################################################################################
 #     Using the requests library, create a new HTTP GET Request against the Webex Teams API Endpoint for Webex Teams Rooms:
