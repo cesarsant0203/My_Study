@@ -34,7 +34,7 @@ if choice == "N" or choice == "n":
 	accessToken = input("Enter your access token: ")
 	accessToken = "Bearer " + accessToken
 else: 
-	accessToken = "Bearer <!!!REPLACEME with hard-coded access token value!!!>"
+	accessToken = "Bearer MjM1NTY4ZjUtNjJiMS00NmEwLWIzNDQtODBhOTU4ODQyOTZjYmIxZTVmNTUtYmY5_PF84_consumery"
 	
 #########################################################################################
 #     Build request components, URI and header with bearer token 

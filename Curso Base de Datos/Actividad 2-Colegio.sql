@@ -25,3 +25,14 @@ p_Telefono int default null,
 primary key(Id_P)
 )engine=InnoDB default charset=utf8;
 select * from t_profesor;
+-- para seleccionar el maximo id se usa max, se puede usar count tambien
+select max(N_matricula) as 'Numero de alumnos registrados' from t_alumno;
+
+select 	ta.a_Nombre as 'Nombre del estudiante',
+		ts.s_Nombre as 'Nombre de la asignatura',
+        tp.p_Nombre as 'Nombre del profesor'  
+        from t_alumno as ta
+		inner join t_asignatura as ts
+        on ts.N_matricula=ta.N_matricula
+		inner join t_profesor as tp
+		on tp.Id_P=ts.Id_P;
