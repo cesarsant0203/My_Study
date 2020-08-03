@@ -23,7 +23,6 @@ GO
 CREATE TABLE tabvalores (valor int)
 GO
 
-DECLARE @transa1 varchar(20) = 'Transaccion1';
 
 -- Se inicia una transacción a la que se le ha dado nombre 
 -- inserta dos registros y hace rollback usando 
@@ -33,7 +32,7 @@ DECLARE @transa1 varchar(20) = 'Transaccion1'
 BEGIN TRAN @transa1 
        INSERT INTO tabvalores VALUES(1);
        INSERT INTO tabvalores VALUES(2);
-	   select * from tabvalores;
+	   select valor from tabvalores;
 ROLLBACK TRAN @transa1
 INSERT INTO tabvalores VALUES(3);
 INSERT INTO tabvalores VALUES(4); 
@@ -134,6 +133,7 @@ GO
 
 -- Utilizar @@ROWCOUNT (número de registros afectados por 
 -- la última sentencia SQL)
+use pubs
 
 select * from authors 
 order by au_lname
