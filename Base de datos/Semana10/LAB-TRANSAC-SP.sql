@@ -23,6 +23,7 @@ GO
 CREATE TABLE tabvalores (valor int)
 GO
 
+DECLARE @transa1 varchar(20) = 'Transaccion1';
 
 -- Se inicia una transacción a la que se le ha dado nombre 
 -- inserta dos registros y hace rollback usando 
@@ -32,7 +33,7 @@ DECLARE @transa1 varchar(20) = 'Transaccion1'
 BEGIN TRAN @transa1 
        INSERT INTO tabvalores VALUES(1);
        INSERT INTO tabvalores VALUES(2);
-	   select valor from tabvalores;
+	   select * from tabvalores;
 ROLLBACK TRAN @transa1
 INSERT INTO tabvalores VALUES(3);
 INSERT INTO tabvalores VALUES(4); 
@@ -133,7 +134,6 @@ GO
 
 -- Utilizar @@ROWCOUNT (número de registros afectados por 
 -- la última sentencia SQL)
-use pubs
 
 select * from authors 
 order by au_lname
@@ -217,9 +217,7 @@ CREATE PROCEDURE ventas_por_titulo
 @titulo varchar(80), -- Parámetro de entrada
 @venta_anual int OUTPUT -- Parámetro de salida
 AS 
-
 -- Calcula las ventas para ese título, y asigna al parámetro de salida
-
 SELECT @venta_anual = ytd_sales
 FROM titles
 WHERE title = @titulo
@@ -231,19 +229,18 @@ DECLARE @venta_anual_llamada int
 -- Ejecuta el procedure con un valor para  el parámetro titulo
 -- y salva el valor de salida.
 EXECUTE ventas_por_titulo
-'Sushi, Anyone?',  @venta_anual_llamada OUTPUT 
+'Life Without Fear',  @venta_anual_llamada OUTPUT 
 -- Muestra el valor regresado por el procedimiento.
 PRINT 'Ventas para el título  "Sushi, Anyone?": ' 
 + convert(varchar(6),@venta_anual_llamada)
 GO
-
+select * from titles order by title
 
 --- Devolver valores con código de retorno desde el SP 
 
 CREATE PROCEDURE ventas_con_retorno  
 @titulo varchar(80) = NULL , @venta_anual int OUTPUT 
 AS 
-
 IF @titulo IS NULL
    BEGIN
        PRINT 'ERROR: Especifique un título'
@@ -278,7 +275,7 @@ GO
 SELECT * FROM TITLES; 
 
 declare @ventas int, @retorno int
-exec @retorno = ventas_con_retorno 'Straight',  
+exec @retorno = ventas_con_retorno 'The title doesnt exist',  
 @ventas output
 
 print 'Retorna del sp ' + convert (char(2),@retorno)
@@ -330,19 +327,26 @@ SELECT * FROM AUTHORS
 -- Escriba un SP que reciba el nombre de una tienda (stor_name) y devuelva
 -- el valor que se ha facturado en los libros vendidos en esa tienda. 
 go
+/*drop procedure Facturacion
+go */
 
-drop procedure Facturacion
-go 
+
 CREATE PROCEDURE Facturacion (@nombretienda VARCHAR(100))
 AS
 CREATE TABLE #Temporal (Tienda VARCHAR(100),Cantidad money)
-INSERT INTO #Temporal SELECT stor_name as Tienda, (qty*price) as Facturacion
-FROM sales JOIN stores on sales.stor_id=stores.stor_id JOIN titles
+INSERT INTO #Temporal 
+SELECT stor_name as Tienda, (qty*price) as Facturacion
+FROM sales JOIN stores
+on sales.stor_id=stores.stor_id 
+JOIN titles
 on sales.title_id=titles.title_id
 GROUP BY stor_name,qty,price
-SELECT Tienda, SUM(Cantidad) as [Ventas Totales] from #Temporal 
+SELECT Tienda, SUM(Cantidad) as [Ventas Totales]
+from #Temporal 
 GROUP BY Tienda
 HAVING Tienda=@nombretienda
+return
+
 DROP TABLE #Temporal
 
 EXEC Facturacion 'Barnum''s'
@@ -368,8 +372,12 @@ ON TITAUT.title_id = TIT.title_id
 JOIN sales SAL
 ON TIT.title_id = SAL.title_id
 WHERE au_lname LIKE @au_lname
-		AND au_fname LIKE @au_lname;
-GO
+		AND au_fname LIKE @au_fname;
+return
+
+select * from sales
+
+-- prueba de ejecucion
 
 declare @total_libros_salida int
  
@@ -386,15 +394,18 @@ sp_help titles
 
 drop procedure factura
 go
+
 create procedure factura
 @num_orden varchar(40),
 @val_factura money OUTPUT
 as
-select @val_factura=(qty*price)
+select @val_factura=sum(qty*price)
 from sales sa join titles tit
 on sa.title_id = tit.title_id
 where ord_num like @num_orden
 go
+
+-- prueba de ejecucion
 
 declare @valor_factura money
 exec factura'6871', @valor_factura output

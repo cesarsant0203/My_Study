@@ -17,7 +17,7 @@ f.  COMMIT  a la transacción
 
 */
 
-use prueba
+use BDPRUEBA
 go 
 
 select * from empleados
@@ -66,8 +66,7 @@ begin tran
 		end
 go 
 
-use prueba
-go
+
 
 /* 2.  Escriba una transacción que defina una variable con un nombre de un cargo.
 a.  Busque si existe ese nombre de cargo, si no lo encuentra ROLLBACK
@@ -119,7 +118,7 @@ d. Asigne el codejecutivo al cliente referencial
 e. y a cada una de las cuentas de ese cliente referencial.
 COMMIT  a la transacción. */
 
-select * from clientes order by cod_ejecutivo
+select * from clientes order by codEjecutivo
 
 select * from ejecutivos
 
@@ -133,7 +132,7 @@ select * from clientexcta
 
 
 BEGIN TRAN PREGUNTA1
-DECLARE @codcliente int, @sectorcliente int, @nuevoejecutivo int
+DECLARE @codcliente int, @nuevoejecutivo int
 
 -- a
 
@@ -142,22 +141,22 @@ set @codcliente = 102
 -- b
 IF NOT EXISTS( select cl.codcliente from clientes cl where cl.codcliente=@codcliente)
 	BEGIN
-	ROLLBACK TRAN TRAN1
 	PRINT('CLIENTE NO ENCONTRADO')
+	ROLLBACK TRAN PREGUNTA1
 	END
 
 ELSE
 	-- c
 	BEGIN
 	DECLARE @sectorcliente int
-	SET @sectorcliente = (select codsector from clientes 
+	SET @sectorcliente = (select sector from clientes 
 	where codcliente=@codcliente)
 	SELECT @sectorcliente as 'SECTOR_CLIENTE'
 
-    set @nuevoejecutivo = (select top 1 e.cod_ejecutivo
+    set @nuevoejecutivo = (select top 1 e.codEjecutivo
     from ejecutivos e join sucursal s
     on (e.codsucursal = s.codsucursal)
-    where s.codsector = 14
+    where s.sector = @sectorcliente
     order by e.apellido, e.nombre)
 
     SELECT @nuevoejecutivo as 'NUEVO EJECUTIVO'
@@ -174,8 +173,6 @@ ELSE
                      where codcliente = @codcliente)
 	
 END
-GO
-
 COMMIT TRAN
 GO
 
@@ -193,6 +190,7 @@ use banco
 go
 
 select * from prestamos
+select * from Detalle_Prestamo
 
 create table prestamos_cancelados
 (numprestamo int primary key, monto money, fecha_aprobada datetime, dividendos tinyint, saldo money, codsucursal int,
@@ -228,8 +226,8 @@ set @sumavalor= (select sum(valor) from detalle_prestamo
 if @sumavalor != (select monto from prestamos
 				 where numprestamo = @numprestamo)
 	begin 
-		print 'Hay un error, los pagos no igualan al monto'
-		rollback tran
+		print 'Hay un error, los pagos no igualan al monto';
+		rollback tran;
 	end
 
 else
@@ -251,6 +249,7 @@ else
 	 end
 commit tran
 end
+go
 
 
 
