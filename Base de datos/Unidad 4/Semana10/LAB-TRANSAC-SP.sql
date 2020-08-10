@@ -3,12 +3,14 @@
 
 -- LABORATORIO DE TRANSACCIONES Y STORED PROCEDURES
 
--- TRANSACCIONES 
+--/* TRANSACCIONES */
+
 
 USE pubs
 GO
+
 DECLARE @NombreTran VARCHAR(20) /* Declara una variable llamada TranName */
-SELECT @NombreTran = 'MiTransa'  /* Asigna la cadena “MiTransa” a la variable */
+SELECT @NombreTran = 'MiTransa'  /* Asigna la cadena ï¿½MiTransaï¿½ a la variable */
 BEGIN TRANSACTION @NombreTran
 UPDATE roysched
 SET royalty = royalty * 1.10
@@ -25,9 +27,9 @@ GO
 
 DECLARE @transa1 varchar(20) = 'Transaccion1';
 
--- Se inicia una transacción a la que se le ha dado nombre 
+-- Se inicia una transacciï¿½n a la que se le ha dado nombre 
 -- inserta dos registros y hace rollback usando 
--- el nombre de la transacción
+-- el nombre de la transacciï¿½n
 
 DECLARE @transa1 varchar(20) = 'Transaccion1'
 BEGIN TRAN @transa1 
@@ -86,7 +88,7 @@ go
 
 CREATE TABLE TestTran (Cola INT PRIMARY KEY, Colb CHAR(3))
 GO
--- Inicia la transacción
+-- Inicia la transacciï¿½n
 BEGIN TRANSACTION TranExterna -- @@TRANCOUNT = 1.
 GO
 SET NOCOUNT ON
@@ -123,7 +125,7 @@ COMMIT TRANSACTION TranExterna -- Decrementa @@TRANCOUNT a 0.
 -- Commits la transaction TranExterna.
 SELECT TRANCOUNT = @@TRANCOUNT
 GO
--- Hasta aquí la transacción
+-- Hasta aquï¿½ la transacciï¿½n
 
 SET NOCOUNT OFF
 SELECT * FROM TestTran
@@ -132,8 +134,8 @@ DROP TABLE TESTTRAN
 GO
 
 
--- Utilizar @@ROWCOUNT (número de registros afectados por 
--- la última sentencia SQL)
+-- Utilizar @@ROWCOUNT (nï¿½mero de registros afectados por 
+-- la ï¿½ltima sentencia SQL)
 
 select * from authors 
 order by au_lname
@@ -145,7 +147,7 @@ IF @@ROWCOUNT = 2
 COMMIT TRAN
 IF @@TRANCOUNT > 0
 BEGIN
-PRINT 'Una transacción necesita un  rolled back'
+PRINT 'Una transacciï¿½n necesita un  rolled back'
 ROLLBACK TRAN
 END
 
@@ -168,7 +170,7 @@ SELECT * FROM TITLES
 
 Exec ventas_por_titulo 'Straight Talk About Computers'
 
---- VALOR POR DEFECTO PARA PARÁMETROS 
+--- VALOR POR DEFECTO PARA PARï¿½METROS 
 USE PRUEBA 
 GO
 
@@ -181,43 +183,44 @@ AS
 SELECT @uno, @dos,  @tres
 GO
 
-EXECUTE pa_prueba  -- Sin parámetros
+EXECUTE pa_prueba  -- Sin parï¿½metros
 GO
 
+/*Muestra:
+NULL	2	3
+*/
+EXECUTE pa_prueba 10, 20, 30 -- Todos los parï¿½metros
+GO
+/*
 Muestra:
 NULL	2	3
-
-EXECUTE pa_prueba 10, 20, 30 -- Todos los parámetros
+*/
+EXECUTE pa_prueba @dos = 500  -- Solo segundo parï¿½metro
 GO
-
-Muestra:
-NULL	2	3
-
-EXECUTE pa_prueba @dos = 500  -- Solo segundo parámetro
-GO
-
+/*
 Muestra:
 NULL 500 3
-
+*/
 EXECUTE pa_prueba 40, @tres = 50  
 GO
-
+/*
 Muestra:
 40 2 50
-
+*/
 ---
 
--- Devolver parámetros con OUTPUT 
+-- Devolver parï¿½metros con OUTPUT 
 Use PUBS 
 go
 
 drop procedure ventas_por_titulo 
+go
 
 CREATE PROCEDURE ventas_por_titulo
-@titulo varchar(80), -- Parámetro de entrada
-@venta_anual int OUTPUT -- Parámetro de salida
+@titulo varchar(80), -- Parï¿½metro de entrada
+@venta_anual int OUTPUT -- Parï¿½metro de salida
 AS 
--- Calcula las ventas para ese título, y asigna al parámetro de salida
+-- Calcula las ventas para ese tï¿½tulo, y asigna al parï¿½metro de salida
 SELECT @venta_anual = ytd_sales
 FROM titles
 WHERE title = @titulo
@@ -226,24 +229,24 @@ GO
 
 -- Declarar la variables para recibir la salida del procedure
 DECLARE @venta_anual_llamada int
--- Ejecuta el procedure con un valor para  el parámetro titulo
+-- Ejecuta el procedure con un valor para  el parï¿½metro titulo
 -- y salva el valor de salida.
 EXECUTE ventas_por_titulo
 'Life Without Fear',  @venta_anual_llamada OUTPUT 
 -- Muestra el valor regresado por el procedimiento.
-PRINT 'Ventas para el título  "Sushi, Anyone?": ' 
+PRINT 'Ventas para el tï¿½tulo  "Sushi, Anyone?": ' 
 + convert(varchar(6),@venta_anual_llamada)
 GO
 select * from titles order by title
-
---- Devolver valores con código de retorno desde el SP 
+go
+--- Devolver valores con cï¿½digo de retorno desde el SP 
 
 CREATE PROCEDURE ventas_con_retorno  
 @titulo varchar(80) = NULL , @venta_anual int OUTPUT 
 AS 
 IF @titulo IS NULL
    BEGIN
-       PRINT 'ERROR: Especifique un título'
+       PRINT 'ERROR: Especifique un tï¿½tulo'
        RETURN(1)
    END
 ELSE
@@ -304,17 +307,17 @@ city, state, zip, contract) values
 
 IF  @@ERROR  <> 0 
 BEGIN
-   PRINT 'Ocurrió un error en el insert'
+   PRINT 'Ocurriï¿½ un error en el insert'
    RETURN(99)
 END
 ELSE
 BEGIN
-    PRINT 'Se cargó un nuevo autor'
+    PRINT 'Se cargï¿½ un nuevo autor'
     RETURN(0)
 END
 GO
 
--- Prueba de ejecución del procedimiento :
+-- Prueba de ejecuciï¿½n del procedimiento :
 
 Declare @retorno int
 Exec @retorno = inserta_author  '123-44-6777' , 'PEREZ','JUAN',
@@ -354,8 +357,8 @@ EXEC Facturacion 'Barnum''s'
 go
 
 
--- Escriba un SP que reciba como parámetro el nombre de un autor. El procedimiento 
--- almacenado debe devolver el número de libros de su autoría, que se han vendido. 
+-- Escriba un SP que reciba como parï¿½metro el nombre de un autor. El procedimiento 
+-- almacenado debe devolver el nï¿½mero de libros de su autorï¿½a, que se han vendido. 
 -- Tome en cuenta las ventas de los libros en la tabla SALES. 
 
 create procedure numero_libros
@@ -387,7 +390,7 @@ exec numero_libros
 PRINT 'Ventas de libros del autor: ' + convert(varchar(6),@total_libros_salida) 
 GO
 
--- Escriba un SP que reciba un ord_num (número de factura) y devuelva el valor 
+-- Escriba un SP que reciba un ord_num (nï¿½mero de factura) y devuelva el valor 
 -- de esa factura 
 
 sp_help titles 
@@ -417,12 +420,12 @@ select @valor_factura as 'Valor Factura'
 -- SOBRE LA BD PEDIDOS
 
 
-/*1.	Cree una tabla llamada TOTAL-VENTA, que contenga el código del artículo 
-y un campo para el número total de unidades vendidas.
-•	Escriba un SP para insertar un registro en la tabla DETALLE_ORDENES, que 
-reciba como parámetros:  el número de orden, el código del artículo y la cantidad.- 
+/*1.	Cree una tabla llamada TOTAL-VENTA, que contenga el cï¿½digo del artï¿½culo 
+y un campo para el nï¿½mero total de unidades vendidas.
+ï¿½	Escriba un SP para insertar un registro en la tabla DETALLE_ORDENES, que 
+reciba como parï¿½metros:  el nï¿½mero de orden, el cï¿½digo del artï¿½culo y la cantidad.- 
 El SP debe insertar un registro en DETALLE_ORDENES y actualizar la tabla TOTAL-VENTA, 
-para sumar la cantidad vendida del artículo y mantener el total vendido acumulado.
+para sumar la cantidad vendida del artï¿½culo y mantener el total vendido acumulado.
 */
 
 use pedidos
@@ -430,10 +433,10 @@ go
 
 create table TOTAL_VENTA (codarticulo int primary key, total int)
 
-select * from detalle_ordenes -- verificar cuál es el contenido
+select * from detalle_ordenes -- verificar cuï¿½l es el contenido
 insert into total_venta values(2, 5)
 
-SELECT * from TOTAL_VENTA -- código de art. 2
+SELECT * from TOTAL_VENTA -- cï¿½digo de art. 2
 
 drop procedure sp_total
 go
@@ -452,7 +455,7 @@ else
    insert into total_venta values(@art, @cant)
 go
 
--- Prueba la ejecución
+-- Prueba la ejecuciï¿½n
 
 execute sp_total 5,3,1,5
 execute sp_total 5,4,2,8 
@@ -460,12 +463,12 @@ select * from total_venta
 
 
 
-/*2.	Escriba un SP para obtener el valor a pagar por participación en ventas 
+/*2.	Escriba un SP para obtener el valor a pagar por participaciï¿½n en ventas 
 a un empleado.-  
-•	El SP recibe como parámetro el código del empleado y un porcentaje de 
-participación y obtiene como parámetro de salida el valor que el empleado 
-va a recibir, calculado como el porcentaje de participación por la 
-venta realizada por ese empleado (no considere los descuentos en las órdenes
+ï¿½	El SP recibe como parï¿½metro el cï¿½digo del empleado y un porcentaje de 
+participaciï¿½n y obtiene como parï¿½metro de salida el valor que el empleado 
+va a recibir, calculado como el porcentaje de participaciï¿½n por la 
+venta realizada por ese empleado (no considere los descuentos en las ï¿½rdenes
 de pedido).-  Pruebe el SP */
 
 use pedidos
@@ -507,20 +510,20 @@ set @valor_pagar = @valor_pagar * @participa * 0.01
 
 go
 
--- Prueba la ejecución
+-- Prueba la ejecuciï¿½n
 -- Declarar la variables para recibir la salida del procedure
 DECLARE @venta_vendedor money
--- Ejecuta el procedure con un código de vendedor y porcentaje 
--- de participación y salva el valor de salida.
+-- Ejecuta el procedure con un cï¿½digo de vendedor y porcentaje 
+-- de participaciï¿½n y salva el valor de salida.
 EXECUTE sp_participa 2,5,  @venta_vendedor OUTPUT 
 -- Muestra el valor regresado por el procedimiento.
-PRINT 'Ventas para el vendedor 2 con 5% de participación ' +
+PRINT 'Ventas para el vendedor 2 con 5% de participaciï¿½n ' +
 convert(varchar(6),@venta_vendedor)
 GO
 
 
-/*3.	Escriba un SP que recibe como parámetro un código de proveedor y obtiene como 
-parámetro de salida el número de registros de DETALLE_ORDENES en las que existen 
+/*3.	Escriba un SP que recibe como parï¿½metro un cï¿½digo de proveedor y obtiene como 
+parï¿½metro de salida el nï¿½mero de registros de DETALLE_ORDENES en las que existen 
 productos de ese proveedor.  Pruebe el SP.*/
 
 select * from DETALLE_ORDENES;
@@ -533,14 +536,14 @@ where productoid in
 (select productoid from productos where proveedorid= @prov)
 go 
 
--- Prueba la ejecución
+-- Prueba la ejecuciï¿½n
 declare @sale int
 exec sp_proveedor 10, @sale OUTPUT
 PRINT 'registros para proveedor 10 = '+convert (char(4),@sale)
 go
 
-/*4.	Escriba un SP que recibe como parámetro un nombre de compañía de
-un cliente y devuelve el número de órdenes y el promedio de descuento que se 
+/*4.	Escriba un SP que recibe como parï¿½metro un nombre de compaï¿½ï¿½a de
+un cliente y devuelve el nï¿½mero de ï¿½rdenes y el promedio de descuento que se 
 le ha concedido a ese cliente */
 
 select * from ORDENES;
@@ -556,7 +559,7 @@ where o.clienteid =
 go
 
 
--- prueba de ejecución
+-- prueba de ejecuciï¿½n
 -- declara variables de salida
 declare @ordenes_salida int, @promdes_salida decimal(5,2)
 
@@ -566,8 +569,8 @@ print 'Para EL ROSADO : ORDENES :'+ convert (char(4), @ordenes_salida) +
 
 
 
--- 5. Escriba un SP que reciba el nombre de una compañía cliente y devuelva 
--- el número de órdenes de esa compañía, así como el valor total de las órdenes 
+-- 5. Escriba un SP que reciba el nombre de una compaï¿½ï¿½a cliente y devuelva 
+-- el nï¿½mero de ï¿½rdenes de esa compaï¿½ï¿½a, asï¿½ como el valor total de las ï¿½rdenes 
 -- que ha generado. 
 
 
@@ -594,7 +597,7 @@ declare @numero_de_ordenes int, @valor_total money
 exec ordenes_procedure
 'su tienda', @numero_de_ordenes output,@valor_total output
 select @numero_de_ordenes as 'Numero de ordenes',@valor_total as 'Valor total'
-
+go
 --- 
 CREATE PROCEDURE Ventas(@compania VARCHAR(125))
 AS
@@ -603,7 +606,7 @@ INSERT INTO #Temporal
 SELECT ORDENID, SUM((CANTIDAD*PRECIOUNIT)) AS Precio FROM DETALLE_ORDENES JOIN PRODUCTOS ON
 DETALLE_ORDENES.PRODUCTOID=PRODUCTOS.PRODUCTOID
 GROUP BY DETALLE_ORDENES.ORDENID
-SELECT NOMBRECIA AS Compañia,SUM(Precio) as [Ventas Totales],
+SELECT NOMBRECIA AS Compania,SUM(Precio) as [Ventas Totales],
 COUNT(*) AS [Numero de Ordenes]
 FROM CLIENTES JOIN ORDENES ON CLIENTES.CLIENTEID=ORDENES.CLIENTEID JOIN
 #Temporal ON ORDENES.ORDENID=#Temporal.ORDENID
