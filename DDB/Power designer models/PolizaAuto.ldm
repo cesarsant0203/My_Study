@@ -417,7 +417,7 @@ IndxFKName=%REFR%_FK
 IndxThreshold=</a:ModelOptionsText>
 <a:Author>R.Navarrete</a:Author>
 <a:Version>1.0</a:Version>
-<a:RepositoryFilename>C:\Users\cesar\OneDrive\Documentos\GitHub\My_Study\Base de datos\Unidad 1-3\PolizaAuto.ldm</a:RepositoryFilename>
+<a:RepositoryFilename>C:\Users\cesar\OneDrive\Documentos\GitHub\My_Study\DDB\Power designer models\PolizaAuto.ldm</a:RepositoryFilename>
 <c:GenerationOrigins>
 <o:Shortcut Id="o3">
 <a:ObjectID>5DE229C6-3784-4D6A-A354-670B2A28A094</a:ObjectID>
