@@ -47,8 +47,7 @@ Rem
 -- BEGIN
 --
 
-CONNECT system/&&syspw@&&dbase
-alter session set "_ORACLE_SCRIPT"=true;
+
 @@mk_account ORA1 ORACLE &&dbase USERS TEMP
 CONNECT system/&&syspw@&&dbase
 --@@mk_account ORA2 ORACLE &&dbase USERS TEMP
