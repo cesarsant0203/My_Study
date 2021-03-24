@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UHb/MvmYFWay8FRL3+2j5dl1MjyNr7kU8xeJmaqxIsw4LGoBSTy4i9EKINOvWISvDf4r97KVN6GgZTG5NFFgeg==",
+  "dgSpecHash": "DjChynf+jkOvFEv2+qjrxFRt9Ru3+JJzuYRMvGvIwMTOdwTAaFixpxvKfeSodQinCQJgf4iGpJhDW7xNIkh56w==",
   "success": true,
-  "projectFilePath": "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
+  "projectFilePath": "C:\\Users\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cesar\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\cesar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
     "C:\\Users\\cesar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "C:\\Users\\cesar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
   ],
