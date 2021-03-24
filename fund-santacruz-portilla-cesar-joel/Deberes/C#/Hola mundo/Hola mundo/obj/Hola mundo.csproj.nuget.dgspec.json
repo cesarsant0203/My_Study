@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj": {}
+    "C:\\Users\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj": {}
   },
   "projects": {
-    "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj": {
+    "C:\\Users\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
+        "projectUniqueName": "C:\\Users\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
         "projectName": "Hola mundo",
-        "projectPath": "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
+        "projectPath": "C:\\Users\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\Hola mundo.csproj",
         "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "D:\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\obj\\",
+        "outputPath": "C:\\Users\\cesar\\OneDrive\\Documentos\\GitHub\\My_Study\\fund-santacruz-portilla-cesar-joel\\Deberes\\C#\\Hola mundo\\Hola mundo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
+            "targetAlias": "netcoreapp3.0",
             "projectReferences": {}
           }
         },
@@ -35,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "targetAlias": "netcoreapp3.0",
           "imports": [
             "net461",
             "net462",
@@ -53,6 +55,14 @@
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -60,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
