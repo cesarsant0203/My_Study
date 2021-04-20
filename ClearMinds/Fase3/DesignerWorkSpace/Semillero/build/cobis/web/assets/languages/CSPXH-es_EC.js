@@ -1,0 +1,23 @@
+{
+	"CSPXH": {
+		"LBL_CSPXH_APELLIDOO_79881": "Apellido",
+		"LBL_CSPXH_CALCULAPR_84286": "Calcular Promedio",
+		"LBL_CSPXH_DIVIDIRDV_49462": "Dividir",
+		"LBL_CSPXH_LIMPIARNQ_10938": "Limpiar",
+		"LBL_CSPXH_MULTIPLAI_36095": "Multiplicar",
+		"LBL_CSPXH_NOMBRECOE_19476": "Nombre completo",
+		"LBL_CSPXH_NOMBRERSF_36854": "Nombre",
+		"LBL_CSPXH_NOTA1NPOZ_77449": "Nota 1",
+		"LBL_CSPXH_NOTA2XBNP_47261": "Nota 2",
+		"LBL_CSPXH_NOTA3XETX_20902": "Nota 3",
+		"LBL_CSPXH_NUMERO1ND_33533": "Numero 1",
+		"LBL_CSPXH_NUMERO2TA_65301": "Numero 2",
+		"LBL_CSPXH_PROMEDICC_11840": "Promedio de calificaciones",
+		"LBL_CSPXH_RESTARDTH_59136": "Restar",
+		"LBL_CSPXH_RESULTAOD_80029": "Resultado",
+		"LBL_CSPXH_SALUDARYD_64105": "Saludar",
+		"LBL_CSPXH_SUMARBLIZ_98781": "Sumar",
+		"MSG_CSPXH_CALIFICAO_93455": "Calificacion fuera del rango",
+		"MSG_CSPXH_ESTECAMER_44711": "Este campo es necesario"
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"Entities": {
+		"EN_1TGWGAATH_265": {
+			"name": "Entity1"
+		},
+		"EN_2FNKCEWQJ_583": {
+			"name": "Entity2"
+		},
+		"EN_3BXARMSSD_785": {
+			"name": "Entity3"
+		},
+		"EN_CALCULAOO_343": {
+			"name": "Calculadora"
+		},
+		"EN_CALIFICOA_209": {
+			"name": "Notas"
+		},
+		"EN_PERSONAEJ_622": {
+			"name": "Persona"
+		}
+	},
+	"FRMLR": {
+		"CompositeForms": {
+		},
+		"Forms": {
+			"T_CSPXHBVQTDRFK_993": {
+				"name": "Calificaciones"
+			},
+			"T_CSPXHXHJHPLKK_785": {
+				"name": "Calculadora"
+			},
+			"T_CSPXHXQNFENUR_191": {
+				"name": "Bienvenida"
+			}
+		},
+		"Queries": {
+		},
+		"SubForms": {
+		}
+	}
+}

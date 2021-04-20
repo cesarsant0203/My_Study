@@ -1,0 +1,158 @@
+05-Apr-2021 14:15:36.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.61
+05-Apr-2021 14:15:36.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 14:03:28 UTC
+05-Apr-2021 14:15:36.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.61.0
+05-Apr-2021 14:15:36.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+05-Apr-2021 14:15:36.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Apr-2021 14:15:36.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Apr-2021 14:15:36.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_281\jre
+05-Apr-2021 14:15:36.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_281-b09
+05-Apr-2021 14:15:36.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Apr-2021 14:15:36.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.61
+05-Apr-2021 14:15:36.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.61
+05-Apr-2021 14:15:36.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.61\conf\logging.properties
+05-Apr-2021 14:15:36.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Apr-2021 14:15:36.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -DCOBIS_HOME_WEB=C:\COBIS_HOME_WEB_SEMILLERO
+05-Apr-2021 14:15:36.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -DserverName=Local
+05-Apr-2021 14:15:36.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Apr-2021 14:15:36.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Apr-2021 14:15:36.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Apr-2021 14:15:36.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.61
+05-Apr-2021 14:15:36.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.61
+05-Apr-2021 14:15:36.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.61\temp
+05-Apr-2021 14:15:36.244 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+05-Apr-2021 14:15:36.244 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+05-Apr-2021 14:15:36.244 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-Apr-2021 14:15:36.248 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+05-Apr-2021 14:15:36.343 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Apr-2021 14:15:36.517 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Apr-2021 14:15:36.527 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 540 ms
+05-Apr-2021 14:15:36.546 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Apr-2021 14:15:36.546 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.61
+05-Apr-2021 14:15:36.562 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\apache-tomcat-8.5.61\webapps\CWC.war]
+05-Apr-2021 14:15:38.677 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-04-05 14:15:38,949 localhost-startStop-1 DEBUG Starting LoggerContext[name=/CWC] from configuration at file:///C:/COBIS_HOME_WEB_SEMILLERO/cwc/infrastructure/cwc-log-config.xml
+2021-04-05 14:15:38,953 localhost-startStop-1 DEBUG Starting LoggerContext[name=/CWC, org.apache.logging.log4j.core.LoggerContext@27c481e5] with configuration XmlConfiguration[location=C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml]...
+2021-04-05 14:15:38,955 localhost-startStop-1 DEBUG Shutdown hook enabled. Registering a new one.
+2021-04-05 14:15:38,956 localhost-startStop-1 DEBUG Initializing configuration XmlConfiguration[location=C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml]
+2021-04-05 14:15:38,960 localhost-startStop-1 DEBUG Installed script engines
+2021-04-05 14:15:39,187 localhost-startStop-1 DEBUG Oracle Nashorn Version: 1.8.0_281, Language: ECMAScript, Threading: Not Thread Safe, Compile: true, Names: {nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript}
+2021-04-05 14:15:39,190 localhost-startStop-1 DEBUG PluginManager 'Core' found 114 plugins
+2021-04-05 14:15:39,190 localhost-startStop-1 DEBUG PluginManager 'Level' found 0 plugins
+2021-04-05 14:15:39,196 localhost-startStop-1 DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2021-04-05 14:15:39,207 localhost-startStop-1 TRACE TypeConverterRegistry initializing.
+2021-04-05 14:15:39,208 localhost-startStop-1 DEBUG PluginManager 'TypeConverter' found 26 plugins
+2021-04-05 14:15:39,215 localhost-startStop-1 DEBUG createProperty(name="filename", value="cwc-${sys:serverName}.log")
+2021-04-05 14:15:39,217 localhost-startStop-1 DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2021-04-05 14:15:39,233 localhost-startStop-1 DEBUG createProperty(name="LOG_DIRECTORY", value="${sys:CWC_LOG_DIRECTORY}")
+2021-04-05 14:15:39,236 localhost-startStop-1 DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2021-04-05 14:15:39,236 localhost-startStop-1 DEBUG createProperty(name="serverName", value="${sys:serverName}")
+2021-04-05 14:15:39,236 localhost-startStop-1 DEBUG Building Plugin[name=properties, class=org.apache.logging.log4j.core.config.PropertiesPlugin].
+2021-04-05 14:15:39,241 localhost-startStop-1 DEBUG configureSubstitutor(={filename=cwc-${sys:serverName}.log, LOG_DIRECTORY=${sys:CWC_LOG_DIRECTORY}, serverName=${sys:serverName}}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml))
+2021-04-05 14:15:39,242 localhost-startStop-1 DEBUG PluginManager 'Lookup' found 14 plugins
+2021-04-05 14:15:39,243 localhost-startStop-1 DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2021-04-05 14:15:39,247 localhost-startStop-1 DEBUG createStrategy(max="50", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="true", Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml))
+2021-04-05 14:15:39,252 localhost-startStop-1 DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2021-04-05 14:15:39,257 localhost-startStop-1 DEBUG PatternLayout$Builder(pattern="%d{MMdd HHmmss,SSS} %-5.5p[Local][%-.15t][%c{1}][%M][trc:%X{traceId},%X{httpSessionId},%X{user},%X{sessionIdCobis}]%m%n", PatternSelector=null, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2021-04-05 14:15:39,258 localhost-startStop-1 DEBUG PluginManager 'Converter' found 41 plugins
+2021-04-05 14:15:39,277 localhost-startStop-1 DEBUG Building Plugin[name=TimeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.TimeBasedTriggeringPolicy].
+2021-04-05 14:15:39,277 localhost-startStop-1 DEBUG createPolicy(interval="1", modulate="true")
+2021-04-05 14:15:39,278 localhost-startStop-1 DEBUG Building Plugin[name=SizeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy].
+2021-04-05 14:15:39,278 localhost-startStop-1 DEBUG createPolicy(size="100 MB")
+2021-04-05 14:15:39,280 localhost-startStop-1 DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2021-04-05 14:15:39,282 localhost-startStop-1 DEBUG createPolicy(={TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=true), SizeBasedTriggeringPolicy(size=104857600)})
+2021-04-05 14:15:39,283 localhost-startStop-1 DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2021-04-05 14:15:39,306 localhost-startStop-1 DEBUG RollingRandomAccessFileAppender$Builder(fileName="C:\COBIS_HOME_WEB_SEMILLERO/logs/cwc-Local.log", filePattern="C:\COBIS_HOME_WEB_SEMILLERO/logs/${date:yyyy-MM}/cwc-Local.log.%d{yyyy-MM-dd-HH}-%i.log.gz", append="null", Policies(CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=true), SizeBasedTriggeringPolicy(size=104857600)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=50, useMax=true)), advertise="null", advertiseURI="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%d{MMdd HHmmss,SSS} %-5.5p[Local][%-.15t][%c{1}][%M][trc:%X{traceId},%X{httpSessionId},%X{user},%X{sessionIdCobis}]%m%n), name="CRollingRandomAccessFile", Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,315 localhost-startStop-1 TRACE RandomAccessFile C:\COBIS_HOME_WEB_SEMILLERO/logs/cwc-Local.log seek to 10880131
+2021-04-05 14:15:39,316 localhost-startStop-1 DEBUG Starting RollingRandomAccessFileManager C:\COBIS_HOME_WEB_SEMILLERO/logs/cwc-Local.log
+2021-04-05 14:15:39,318 localhost-startStop-1 DEBUG PluginManager 'FileConverter' found 2 plugins
+2021-04-05 14:15:39,320 localhost-startStop-1 DEBUG Setting prev file time to 2021-04-05T14:12:48.003-0500
+2021-04-05 14:15:39,323 localhost-startStop-1 DEBUG Initializing triggering policy CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=true), SizeBasedTriggeringPolicy(size=104857600)])
+2021-04-05 14:15:39,324 localhost-startStop-1 TRACE PatternProcessor.getNextTime returning 2021/04/05-15:00:00.000, nextFileTime=2021/04/05-14:00:00.000, prevFileTime=1969/12/31-19:00:00.000, current=2021/04/05-14:15:39.324, freq=HOURLY
+2021-04-05 14:15:39,325 localhost-startStop-1 TRACE PatternProcessor.getNextTime returning 2021/04/05-15:00:00.000, nextFileTime=2021/04/05-14:00:00.000, prevFileTime=2021/04/05-14:00:00.000, current=2021/04/05-14:15:39.325, freq=HOURLY
+2021-04-05 14:15:39,326 localhost-startStop-1 DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2021-04-05 14:15:39,331 localhost-startStop-1 DEBUG createAppenders(={CRollingRandomAccessFile})
+2021-04-05 14:15:39,331 localhost-startStop-1 DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2021-04-05 14:15:39,332 localhost-startStop-1 DEBUG createAppenderRef(ref="CRollingRandomAccessFile", level="null", Filter=null)
+2021-04-05 14:15:39,333 localhost-startStop-1 DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2021-04-05 14:15:39,334 localhost-startStop-1 DEBUG createLogger(additivity="null", level="ALL", includeLocation="false", ={CRollingRandomAccessFile}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,336 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,338 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.api.rest.impl", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,339 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,340 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.api.service.impl", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,341 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,342 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.configuration", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,342 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,358 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.context", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,359 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,360 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.context.impl", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,361 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,362 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.impl", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,362 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,363 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.license.impl", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,364 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,365 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.api.rest.impl", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,366 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,367 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.security.admin", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,367 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,368 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.security.auth", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,369 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,370 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.security.filter", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,370 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,371 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.security.token", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,372 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,373 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.security.tr", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,380 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,381 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.cobis.cwc.security.tr", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,381 localhost-startStop-1 DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2021-04-05 14:15:39,382 localhost-startStop-1 DEBUG createLogger(additivity="true", level="DEBUG", name="com.cobiscorp.designer.ui", includeLocation="null", ={}, ={}, Configuration(C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml), Filter=null)
+2021-04-05 14:15:39,383 localhost-startStop-1 DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2021-04-05 14:15:39,385 localhost-startStop-1 DEBUG createLoggers(={root, com.cobiscorp.cobis.cwc.api.rest.impl, com.cobiscorp.cobis.cwc.api.service.impl, com.cobiscorp.cobis.cwc.configuration, com.cobiscorp.cobis.cwc.context, com.cobiscorp.cobis.cwc.context.impl, com.cobiscorp.cobis.impl, com.cobiscorp.cobis.cwc.license.impl, com.cobiscorp.cobis.cwc.api.rest.impl, com.cobiscorp.cobis.cwc.security.admin, com.cobiscorp.cobis.cwc.security.auth, com.cobiscorp.cobis.cwc.security.filter, com.cobiscorp.cobis.cwc.security.token, com.cobiscorp.cobis.cwc.security.tr, com.cobiscorp.cobis.cwc.security.tr, com.cobiscorp.designer.ui})
+2021-04-05 14:15:39,387 localhost-startStop-1 DEBUG Configuration XmlConfiguration[location=C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml] initialized
+2021-04-05 14:15:39,387 localhost-startStop-1 DEBUG Starting configuration XmlConfiguration[location=C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml]
+2021-04-05 14:15:39,389 localhost-startStop-1 DEBUG Log4j2 ConfigurationScheduler starting 1 threads
+2021-04-05 14:15:39,396 localhost-startStop-1 DEBUG Started configuration XmlConfiguration[location=C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml] OK.
+2021-04-05 14:15:39,396 localhost-startStop-1 TRACE Stopping org.apache.logging.log4j.core.config.DefaultConfiguration@cf27879...
+2021-04-05 14:15:39,397 localhost-startStop-1 TRACE DefaultConfiguration notified 1 ReliabilityStrategies that config will be stopped.
+2021-04-05 14:15:39,397 localhost-startStop-1 TRACE DefaultConfiguration stopping root LoggerConfig.
+2021-04-05 14:15:39,398 localhost-startStop-1 TRACE DefaultConfiguration notifying ReliabilityStrategies that appenders will be stopped.
+2021-04-05 14:15:39,399 localhost-startStop-1 TRACE DefaultConfiguration stopping remaining Appenders.
+2021-04-05 14:15:39,399 localhost-startStop-1 DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+2021-04-05 14:15:39,399 localhost-startStop-1 DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-1, all resources released: true
+2021-04-05 14:15:39,400 localhost-startStop-1 DEBUG Appender DefaultConsole-1 stopped with status true
+2021-04-05 14:15:39,400 localhost-startStop-1 TRACE DefaultConfiguration stopped 1 remaining Appenders.
+2021-04-05 14:15:39,401 localhost-startStop-1 TRACE DefaultConfiguration cleaning Appenders from 1 LoggerConfigs.
+2021-04-05 14:15:39,401 localhost-startStop-1 DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@cf27879 OK
+2021-04-05 14:15:39,403 localhost-startStop-1 TRACE Reregistering MBeans after reconfigure. Selector=org.apache.logging.log4j.core.selector.ClassLoaderContextSelector@2806c109
+2021-04-05 14:15:39,404 localhost-startStop-1 TRACE Reregistering context (1/1): '/CWC' org.apache.logging.log4j.core.LoggerContext@27c481e5
+2021-04-05 14:15:39,406 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC'
+2021-04-05 14:15:39,411 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC,component=StatusLogger'
+2021-04-05 14:15:39,412 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC,component=ContextSelector'
+2021-04-05 14:15:39,413 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC,component=Loggers,name=*'
+2021-04-05 14:15:39,413 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC,component=Appenders,name=*'
+2021-04-05 14:15:39,414 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC,component=AsyncAppenders,name=*'
+2021-04-05 14:15:39,415 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC,component=AsyncLoggerRingBuffer'
+2021-04-05 14:15:39,416 localhost-startStop-1 TRACE Unregistering but no MBeans found matching 'org.apache.logging.log4j2:type=/CWC,component=Loggers,name=*,subtype=RingBuffer'
+2021-04-05 14:15:39,419 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC
+2021-04-05 14:15:39,421 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=StatusLogger
+2021-04-05 14:15:39,428 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=ContextSelector
+2021-04-05 14:15:39,430 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=
+2021-04-05 14:15:39,431 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.api.service.impl
+2021-04-05 14:15:39,432 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.license.impl
+2021-04-05 14:15:39,432 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.designer.ui
+2021-04-05 14:15:39,433 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.security.token
+2021-04-05 14:15:39,433 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.context
+2021-04-05 14:15:39,434 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.security.filter
+2021-04-05 14:15:39,435 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.security.admin
+2021-04-05 14:15:39,435 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.configuration
+2021-04-05 14:15:39,436 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.api.rest.impl
+2021-04-05 14:15:39,436 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.security.tr
+2021-04-05 14:15:39,444 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.security.auth
+2021-04-05 14:15:39,445 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.cwc.context.impl
+2021-04-05 14:15:39,446 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Loggers,name=com.cobiscorp.cobis.impl
+2021-04-05 14:15:39,448 localhost-startStop-1 DEBUG Registering MBean org.apache.logging.log4j2:type=/CWC,component=Appenders,name=CRollingRandomAccessFile
+2021-04-05 14:15:39,452 localhost-startStop-1 TRACE Using default SystemClock for timestamps.
+2021-04-05 14:15:39,453 localhost-startStop-1 TRACE Using DummyNanoClock for nanosecond timestamps.
+2021-04-05 14:15:39,456 localhost-startStop-1 DEBUG LoggerContext[name=/CWC, org.apache.logging.log4j.core.LoggerContext@27c481e5] started OK with configuration XmlConfiguration[location=C:\COBIS_HOME_WEB_SEMILLERO\cwc\infrastructure\cwc-log-config.xml].
+2021-04-05 14:15:39,601 localhost-startStop-1 DEBUG AsyncLogger.ThreadNameStrategy=CACHED
+2021-04-05 14:15:39,601 localhost-startStop-1 TRACE Using default SystemClock for timestamps.
+Current ComponentManager:null
