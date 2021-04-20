@@ -1,0 +1,8 @@
+ssh -N -L 1450:IP_PRIVADA_DEST:1433 -i "llave.pem" ec2-user@IP_PUBLICA_BAST -p 2222
+ssh -N -L 1451:10.0.3.20:1433 -i "SybCobis.pem" ec2-user@52.15.252.186 -p 2222
+ssh -N -L 1451:ip-10-0-3-20.us-east-2.compute.internal:1433 -i "SybCobis.pem" ec2-user@ec2-52-15-252-186.us-east-2.compute.amazonaws.com -p 2222
+-----usuario y contraseña web
+admuser
+admuser1
+-----ruta log
+/home/Jboss/COBIS_HOME_WEB/logs

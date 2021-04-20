@@ -1,0 +1,23 @@
+BASTION
+	PUBLICA: 18.218.12.126
+	DNS PUBLICA: ec2-18-218-12-126.us-east-2.compute.amazonaws.com
+	2222
+	
+SQL
+	PRIVADA: 10.0.3.20
+	DNS PRIVADA: ip-10-0-3-20.us-east-2.compute.internal
+	1433
+CWC
+	PRIVADA: 10.0.3.182
+	DNS PRIVADA: ip-10-0-3-182.us-east-2.compute.internal
+
+	PUBLICA: 3.21.12.190
+	DNS PUBLICA: ec2-3-21-12-190.us-east-2.compute.amazonaws.com
+	8080
+
+CTS	
+	PUBLICA: 3.142.251.237
+	DNS PUBLICA: ec2-3-142-251-237.us-east-2.compute.amazonaws.com
+ 
+	PRIVADA: 10.0.3.228
+	DNS PRIVADA: ip-10-0-3-228.us-east-2.compute.internal

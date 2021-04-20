@@ -1,0 +1,572 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "CSPXH",
+		"subModuleId": "FRMLR",
+		"taskId": "T_CSPXHXHJHPLKK_785",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_CALCULADAA_122785",
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../CSPXH/relations/componentKeys.json#/FRMLR/Forms/T_CSPXHXHJHPLKK_785/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "CSPXH",
+				"subModuleId": "FRMLR",
+				"taskId": "T_CSPXHXHJHPLKK_785",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_CALCULADAA_122785"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "Calculadora",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 2,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../CSPXH/entities/EN_CALCULAOO_343.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_CALCULAODO_722100",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group1863",
+						"order": 1,
+						"orientation": "V",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CSPXH/entities/EN_CALCULAOO_343.json#/attributes/AT83_NUMERO11343"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": 1,
+										"id": "VV_1KTCNQPMBVXHCIJ_65710089",
+										"visualValidationType": {
+											"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+											"visualValidationId": "InputRestriction"
+										}
+									},
+									{
+										"compareOperator": -1,
+										"id": "VV_1KTCNQPMBVXHCIJ_65710023",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/MSG/MSG_CSPXH_ESTECAMER_44711"
+											},
+											"labelId": "MSG_CSPXH_ESTECAMER_44711",
+											"moduleId": "CSPXH"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_NUMERO1ND_33533"
+									},
+									"labelId": "LBL_CSPXH_NUMERO1ND_33533",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "numero1",
+								"options": 0,
+								"order": 3,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_1KTCNQPMBVXHCIJ_657100",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CSPXH/entities/EN_CALCULAOO_343.json#/attributes/AT65_NUMERO22343"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": 1,
+										"id": "VV_2XAUGKJVAWAQVWE_40610065",
+										"visualValidationType": {
+											"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+											"visualValidationId": "InputRestriction"
+										}
+									},
+									{
+										"compareOperator": -1,
+										"id": "VV_2XAUGKJVAWAQVWE_40610039",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/MSG/MSG_CSPXH_ESTECAMER_44711"
+											},
+											"labelId": "MSG_CSPXH_ESTECAMER_44711",
+											"moduleId": "CSPXH"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_NUMERO2TA_65301"
+									},
+									"labelId": "LBL_CSPXH_NUMERO2TA_65301",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "numero2",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_2XAUGKJVAWAQVWE_406100",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CSPXH/entities/EN_CALCULAOO_343.json#/attributes/AT50_RESULTOO343"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 2,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_RESULTAOD_80029"
+									},
+									"labelId": "LBL_CSPXH_RESULTAOD_80029",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "resultado",
+								"options": 0,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextLabel"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_3CJYPCJVEPOKYVE_632100",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VABUTTONBBITWWY_437100_471",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_SUMARBLIZ_98781"
+									},
+									"labelId": "LBL_CSPXH_SUMARBLIZ_98781",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "",
+								"options": 0,
+								"order": 4,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VABUTTONBBITWWY_437100",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VABUTTONIADKUBQ_455100_380",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_MULTIPLAI_36095"
+									},
+									"labelId": "LBL_CSPXH_MULTIPLAI_36095",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "",
+								"options": 0,
+								"order": 6,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VABUTTONIADKUBQ_455100",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VABUTTONIHALIIL_670100_513",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_DIVIDIRDV_49462"
+									},
+									"labelId": "LBL_CSPXH_DIVIDIRDV_49462",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "",
+								"options": 0,
+								"order": 7,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VABUTTONIHALIIL_670100",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attributeValidations": [
+								],
+								"colSpan": 2,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VABUTTONRCKITDC_291100_426",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_LIMPIARNQ_10938"
+									},
+									"labelId": "LBL_CSPXH_LIMPIARNQ_10938",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "VA_VABUTTONRCKITDC_291100",
+								"options": 0,
+								"order": 8,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VABUTTONRCKITDC_291100",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VABUTTONSGXGXHA_648100_457",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_RESTARDTH_59136"
+									},
+									"labelId": "LBL_CSPXH_RESTARDTH_59136",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "",
+								"options": 0,
+								"order": 5,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VABUTTONSGXGXHA_648100",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_CALCULADOA_100"
+				},
+				"metadataVersion": "7.2.0.2024 BETA",
+				"modules": [
+					{
+						"moduleId": "CSPXH"
+					}
+				],
+				"name": "View of Calculadora"
+			}
+		}
+	]
+}

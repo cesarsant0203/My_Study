@@ -1,0 +1,12 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_CALIFICOA_209",
+			"isContextEntity": null,
+			"moduleId": "CSPXH",
+			"related": false
+		}
+	],
+	"queries": [
+	]
+}

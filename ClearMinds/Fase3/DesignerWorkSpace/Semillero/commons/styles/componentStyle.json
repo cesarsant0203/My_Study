@@ -1,0 +1,43 @@
+{
+  "All Layouts": [],
+  "GroupLayout": [],
+  "TabbedLayout": [],
+  "AccordionLayout": [],
+  "CollapsibleLayout": [],
+  "VerticalTabbedLayout": [],
+  "Group": [],
+  "All Input Control": [],
+  "CheckBox": [],
+  "ComboBox": [],
+  "ComboMultiSelect": [],
+  "DropDownList": [],
+  "DateField": [],
+  "DateTimeField": [],
+  "TimePicker": [],
+  "RadioButtonList": [],
+  "TextInputBox": [],
+  "TextInputButton": [],
+  "FileUpload": [],
+  "All Action Controls": [],
+  "Button": [],
+  "ImageButton": [],
+  "TextLink": [],
+  "SimpleLabel": [],
+  "TextLabel": [],
+  "Separator": [],
+  "CompositeVA": [{
+    "name": "cb-gutters",
+    "displayName": "Gutters"
+  }],
+  "CompositeVAElement": [],
+  "Grid": [{
+    "name": "cb-grid-no-border",
+    "displayName": "No border"
+  },{
+    "name": "cb-grid-no-header",
+    "displayName": "No header"
+  }],
+  "GridColumns": [],
+  "GridCells": [],
+  "GridRows": []
+}

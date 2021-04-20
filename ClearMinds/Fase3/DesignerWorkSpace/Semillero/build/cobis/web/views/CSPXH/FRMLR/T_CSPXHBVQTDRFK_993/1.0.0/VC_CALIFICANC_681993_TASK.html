@@ -1,0 +1,35 @@
+<!-- Designer Generator v 7.2.0 - SPR 2020-24 4/12/2020 --><!DOCTYPE html>
+<html ng-app="VC_CALIFICANC_681993">
+ <head> 
+  <title>Calificaciones</title> 
+  <script type="text/javascript">
+var params = {
+cn_pt: '${contextPath}', md_id: 'CSPXH', sb_id: 'FRMLR',
+ts_id: 'T_CSPXHBVQTDRFK_993' , ts_vr: '1.0.0',
+vc_id: 'VC_CALIFICANC_681993', releaseMode: 'false',
+minify: 'true', dsgnr_vrsn: '7.2.0',
+graphicSupport:'false',
+cobisPatterns: 0
+};
+</script> 
+  <script id="CEN">
+function logOffFromCen(flagCen){
+clearInterval(keepAliveInterval);
+window.location.href = "${contextPath}/cobis/web/views/commons/cencontext.html?action=" + flagCen;
+}
+</script> 
+  <script src="${contextPath}/cobis/web/scripts/commons/cobis.censupport.js"></script> 
+  <script src="${contextPath}/cobis/web/scripts/commons/designer-commons-imports.min.js"></script> 
+  <script src="${contextPath}/cobis/web/scripts/commons/designer-imports.min.js"></script> 
+  <script type="text/javascript">
+angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+</script> 
+ </head> 
+ <body ng-controller="VC_CALIFICANC_681993_MAIN_CTRL"> 
+  <div id="validator" ng-view class="cb-view" kendo-validator="validator" k-options="validatorOptions"></div> 
+  <div translate-cloak style="display:none;" class="cb-view-loading"> 
+   <div class="cb-view-loading-icon"></div> 
+  </div> 
+  <div ng-controller="keepAliveCen.Controller"></div>  
+ </body>
+</html>

@@ -1,0 +1,463 @@
+{
+	"autoCrudStr": "F",
+	"cobisPattern": "None",
+	"cobisPatternId": 0,
+	"commands": [
+	],
+	"customEvents": [
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"graphicSupportStr": "F",
+	"header": null,
+	"id": {
+		"moduleId": "CSPXH",
+		"subModuleId": "FRMLR",
+		"taskId": "T_CSPXHBVQTDRFK_993",
+		"version": "1.0.0"
+	},
+	"isCustomized": false,
+	"isImported": false,
+	"mainViewContainerId": "VC_CALIFICANC_681993",
+	"modeEnabled": 4095,
+	"name": {
+		"$ref": "../../../../CSPXH/relations/componentKeys.json#/FRMLR/Forms/T_CSPXHBVQTDRFK_993/name"
+	},
+	"setFocus": false,
+	"tempSaveStr": "F",
+	"viewContainers": [
+		{
+			"breadcrumbs": "Automatic",
+			"collapsedStr": "F",
+			"colSpan": 1,
+			"columnsNum": 1,
+			"componentStyle": null,
+			"customEvents": [
+			],
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": 4095,
+			"id": {
+				"moduleId": "CSPXH",
+				"subModuleId": "FRMLR",
+				"taskId": "T_CSPXHBVQTDRFK_993",
+				"taskVersion": "1.0.0",
+				"viewContainerId": "VC_CALIFICANC_681993"
+			},
+			"isCustomized": false,
+			"layoutType": "Group",
+			"name": "Calificaciones",
+			"options": 0,
+			"responsiveLayouts": null,
+			"responsivity": false,
+			"style": null,
+			"view": {
+				"groups": [
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 3,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 4095,
+						"entity": {
+							"$ref": "../../../../CSPXH/entities/EN_CALIFICOA_209.json#"
+						},
+						"eventType": 0,
+						"groupId": "G_CALIFICIAC_308190",
+						"htmlSection": "F",
+						"independentValidation": "F",
+						"isCustomized": false,
+						"layoutType": "Group",
+						"name": "Group1119",
+						"order": 1,
+						"orientation": "V",
+						"responsiveLayouts": null,
+						"responsivity": false,
+						"style": null,
+						"visible": 4095,
+						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CSPXH/entities/EN_CALIFICOA_209.json#/attributes/AT46_NOTA1SAC209"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": 1,
+										"id": "VV_1ZOAPZXMICWPGFH_20919036",
+										"visualValidationType": {
+											"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+											"visualValidationId": "InputRestriction"
+										}
+									},
+									{
+										"compareOperator": -1,
+										"id": "VV_1ZOAPZXMICWPGFH_20919074",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/MSG/MSG_CSPXH_ESTECAMER_44711"
+											},
+											"labelId": "MSG_CSPXH_ESTECAMER_44711",
+											"moduleId": "CSPXH"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_NOTA1NPOZ_77449"
+									},
+									"labelId": "LBL_CSPXH_NOTA1NPOZ_77449",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "nota1",
+								"options": 0,
+								"order": 1,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_1ZOAPZXMICWPGFH_209190",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CSPXH/entities/EN_CALIFICOA_209.json#/attributes/AT48_NOTA2GIC209"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": 1,
+										"id": "VV_2CTFWNSINTDFBVP_14819076",
+										"visualValidationType": {
+											"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+											"visualValidationId": "InputRestriction"
+										}
+									},
+									{
+										"compareOperator": -1,
+										"id": "VV_2CTFWNSINTDFBVP_14819099",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/MSG/MSG_CSPXH_ESTECAMER_44711"
+											},
+											"labelId": "MSG_CSPXH_ESTECAMER_44711",
+											"moduleId": "CSPXH"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_NOTA2XBNP_47261"
+									},
+									"labelId": "LBL_CSPXH_NOTA2XBNP_47261",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "nota2",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_2CTFWNSINTDFBVP_148190",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CSPXH/entities/EN_CALIFICOA_209.json#/attributes/AT53_NOTA3KJX209"
+								},
+								"attributeValidations": [
+									{
+										"compareOperator": 1,
+										"id": "VV_3BESHVFVWMZYWRU_76419085",
+										"visualValidationType": {
+											"description": "Letters and Numbers, only Numbers, custom list, custom function, lock",
+											"visualValidationId": "InputRestriction"
+										}
+									},
+									{
+										"compareOperator": -1,
+										"id": "VV_3BESHVFVWMZYWRU_76419043",
+										"validateMessageLabel": {
+											"defaultValue": {
+												"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/MSG/MSG_CSPXH_ESTECAMER_44711"
+											},
+											"labelId": "MSG_CSPXH_ESTECAMER_44711",
+											"moduleId": "CSPXH"
+										},
+										"visualValidationType": {
+											"description": "Required Validation",
+											"visualValidationId": "Required"
+										}
+									}
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"format": "",
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_NOTA3XETX_20902"
+									},
+									"labelId": "LBL_CSPXH_NOTA3XETX_20902",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "nota3",
+								"options": 0,
+								"order": 3,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_3BESHVFVWMZYWRU_764190",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CSPXH/entities/EN_CALIFICOA_209.json#/attributes/AT45_PROMEDOT209"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_PROMEDICC_11840"
+									},
+									"labelId": "LBL_CSPXH_PROMEDICC_11840",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "promedioNota",
+								"options": 0,
+								"order": 5,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextLabel"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_4OJGBBWCWTUCZTR_672190",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VABUTTONCBOIZEK_276190_492",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_LIMPIARNQ_10938"
+									},
+									"labelId": "LBL_CSPXH_LIMPIARNQ_10938",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "",
+								"options": 0,
+								"order": 6,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VABUTTONCBOIZEK_276190",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": false,
+								"componentStyle": null,
+								"customEvents": [
+									{
+										"customEventId": "CEVA_010VA_VABUTTONOFZHJYL_946190_224",
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": "T",
+										"eventActions": [
+										],
+										"executionType": 1,
+										"filter": null,
+										"isEnabled": true,
+										"visualAttributeEventType": {
+											"availableExecutionType": 7,
+											"description": "Permite personalizar la acci\u00f3n a ejecutar de un command o de un ActionControl",
+											"eventId": 10,
+											"name": "ExecuteCommand"
+										}
+									}
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"label": {
+									"defaultValue": {
+										"$ref": "../../../../CSPXH/assets/languages/CSPXH.json#/CSPXH/LBL/LBL_CSPXH_CALCULAPR_84286"
+									},
+									"labelId": "LBL_CSPXH_CALCULAPR_84286",
+									"moduleId": "CSPXH"
+								},
+								"maxRecords": null,
+								"name": "",
+								"options": 0,
+								"order": 4,
+								"queryModule": null,
+								"queryVersion": null,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"userControl": {
+									"type": "A",
+									"userControlId": "Button"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_VABUTTONOFZHJYL_946190",
+								"width": null,
+								"widthComposite": "D"
+							}
+						]
+					}
+				],
+				"id": {
+					"version": "1.0.0",
+					"viewId": "VW_CALIFICANO_190"
+				},
+				"metadataVersion": "7.2.0.2024 BETA",
+				"modules": [
+					{
+						"moduleId": "CSPXH"
+					}
+				],
+				"name": "View of Calificaciones"
+			}
+		}
+	]
+}
